@@ -1,0 +1,1099 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    width: auto;
+    background-color: #000F1C;
+    font-size: calc(100vh/48);
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0em;
+    width: 100%;
+    height: 5em;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+}
+
+#container {
+    width: 100%;
+}
+
+.pg-page {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#navbar-main-link {
+    line-height: 0em;
+    transition: 1s linear;
+}
+
+.navbar-link:hover {
+    color: #FF2F02;
+}
+
+#navbar-links,
+#navbar-misc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-links {
+    padding-left: 2.5em;
+}
+
+#navbar-misc {
+    padding-right: 2.5em;
+}
+
+.navbar-link {
+    color: #FFFFFF;
+    padding-left: 2.5em;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+
+#lang-select {
+    color: #FFFFFF;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+#jivo,
+#lang {
+    padding-right: 2.5em;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+#navbar-download-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#navbar-download-link-content {
+    padding: 0.75em 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    opacity: 0.4;
+    color: #FFFFFF;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+}
+
+#headset,
+#globe {
+    width: 130%;
+    height: 130%;
+}
+
+
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: flex
+}
+
+.pressed {
+    display: flex;
+}
+
+.unpressed {
+    display: none;
+}
+
+
+
+
+
+/*****************************Main page************************************/
+#page-1 {
+    background: linear-gradient(62.93deg, rgba(0, 15, 28, 0.73) 0.51%, rgba(0, 15, 28, 0) 31.56%), url('../../assets/pages/main/background/starwars.svg');
+    background-size: 100% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content {
+    width: auto;
+    height: 100%;
+    display: flex;
+    padding-left: 4.6em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#main-header {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+}
+
+.page-content-subheader {
+    margin-top: 1em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+
+}
+
+
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 5em;
+}
+
+#logos-left,
+#logos-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+#logos-right {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.logos-element-left {
+    padding-left: 5em;
+}
+
+.logos-element-right {
+    padding-right: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logos-element-header {
+    margin-bottom: 0.75em;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75em;
+    color: #4B6271;
+}
+
+
+#download-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#download-link-content {
+    width: fit-content;
+    padding: 1.2em 4.6em;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    opacity: 0.4;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+}
+
+#download-link-content:hover,
+#navbar-download-link-content:hover {
+    opacity: 0.8;
+}
+
+#download-link-content:active,
+#navbar-download-link-content:active {
+    opacity: 1;
+}
+
+#download-link-content:disabled,
+#navbar-download-link-content:disabled {
+    opacity: 0.6;
+}
+
+
+
+
+.skeleton-button {
+    display: flex;
+    align-items: center;
+    margin-top: 1.3em;
+    width: 100%;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    border-radius: 12px;
+    opacity: 0.4;
+}
+
+.skeleton-button-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 17.8em;
+    margin: 0.25% 0.25%;
+    padding: 0em 2.3em;
+    background: #0B1625;
+    border-radius: 12px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.skeleton-button:hover {
+    opacity: 1;
+}
+
+
+.skeleton-button-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    background: -webkit-linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/****************************************************/
+
+#page-2 {
+    background: url('../../assets/pages/main/background/nfs.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content-left {
+    width: auto;
+    height: 100%;
+    display: flex;
+    padding-left: 4.6em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#page-content-header-left {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+}
+
+.page-content-subheader-left {
+    margin-top: 1.2em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+
+}
+
+
+/****************************************************/
+
+
+#page-3 {
+    background: url('../../assets/pages/main/background/witcher.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.page-content-right {
+    width: auto;
+    height: 100%;
+    display: flex;
+    padding-right: 4.7em;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+
+#page-content-header-right {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+}
+
+.page-content-subheader-right {
+    margin-top: 1.2em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+
+}
+
+
+/****************************************************/
+
+#page-4 {
+    background: url('../../assets/pages/main/background/payday.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****************************************************/
+#page-5 {
+    background: url('../../assets/pages/main/background/warthunder.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/****************************************************/
+
+#page-6 {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#questions {
+    padding-top: 3.875em;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 53.7em;
+    height: auto;
+    margin-top: 2.6em;
+}
+
+.question-border {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.6em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    border-radius: 26px;
+}
+
+.question-inner {
+    margin: 0.25% 0.2%;
+    padding: 0em 2.3em;
+    width: 53.7em;
+    height: auto;
+    background: #000F1C;
+    border-radius: 26px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.2s linear;
+}
+
+.question-row,
+.answer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-row::after {
+    content: url('https://api.iconify.design/ic:round-keyboard-arrow-down.svg?color=%23A0B4CB&height=3em');
+}
+
+.question-inner:hover {
+    cursor: pointer;
+}
+
+
+.answer-row {
+    display: none;
+    transition: 0.2s linear;
+}
+
+.question-text-desktop {
+    padding: 1.6em 0em;
+    width: fit-content;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.question-text-mobile {
+    display: none;
+}
+
+.answer-text {
+    text-align: justify;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #A0B4CB;
+    padding-bottom: 1.6em;
+    padding-right: 3.5em;
+}
+
+
+
+
+/****************************************************/
+#page-7 {
+    background: url('../../assets/pages/main/background/illidan.svg');
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.illidan-speaks-inner {
+    margin-bottom: 2em;
+}
+
+.illidan-speaks {
+    background: url("/assets//misc/comic-bubble.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 23em;
+    height: 16.5em;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.illidan-speaks-inner {
+    padding-top: 3em;
+}
+
+
+#illidan-speaks-header {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.5em;
+    color: #FFFFFF;
+    padding-bottom: 1em;
+}
+
+
+#footer-download-link {
+    width: auto;
+    height: auto;
+}
+
+#footer-download-link-content {
+    width: 16em;
+    text-align: center;
+    padding: 1.25em 1.75em;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    opacity: 0.4;
+    color: #FFFFFF;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+}
+
+#footer-download-link-content:hover {
+    opacity: 1;
+}
+
+#footer-mobile {
+    display: none;
+}
+
+
+footer {
+    position: relative;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-link-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-link {
+    padding-right: 2em;
+}
+
+#footer-img {
+    width: 120%;
+    height: auto;
+}
+
+#footer-img-pilot {
+    padding-bottom: 0.3em;
+    width: 120%;
+    height: auto;
+}
+
+#footer-img-origin {
+    width: 150%;
+    height: auto;
+}
+
+@media (min-width:320px) and (max-width: 420px) {
+
+    /*General*/
+
+
+    .inactive {
+        display: flex
+    }
+
+    .active {
+        display: none;
+    }
+
+    .unpressed {
+        display: flex;
+    }
+
+    .pressed {
+        display: none;
+    }
+
+    body {
+        font-size: calc(100vw/22.5);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        height: 3.56em;
+        background: rgba(5, 22, 33, 0.7);
+        backdrop-filter: blur(16px);
+    }
+
+    .mobile-burger {
+        display: block;
+        width: 24px;
+        height: 24px;
+        padding-left: 0em;
+    }
+
+    #navbar-links {
+        padding-left: 0em;
+    }
+
+    #navbar-main-link {
+        padding-left: 1em;
+    }
+
+
+    .pg-page {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page-content {
+        padding-left: 0em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-content-left,
+    .page-content-right {
+        padding: 0em 1.25em;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #page-content-header-left,
+    #page-content-header-right {
+        padding-top: 9em;
+    }
+
+    .page-content-subheader-right,
+    .page-content-subheader-left {
+        font-size: 0.875em;
+    }
+
+    #download-link {
+        padding-top: 1.25em;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #navbar-download-link-mobile {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    #navbar-misc {
+        padding-right: 0em;
+    }
+
+    #navbar-download-link-content-mobile {
+        padding: 0.75em 1.5em;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+        opacity: 0.4;
+        color: #FFFFFF;
+        font-size: 0.75em;
+        line-height: 1.125em;
+        letter-spacing: 0.05em;
+        transition: 0.2s linear;
+        border-radius: 10px;
+    }
+
+    #navbar-download-link-content-mobile:active {
+        opacity: 1;
+    }
+
+
+    #download-link-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20em;
+        height: 3.125em;
+        padding: 0.15em 1.4em;
+        text-align: center;
+    }
+
+    #page-5-br {
+        display: none;
+    }
+
+
+    .menu-mobile {
+        display: flex;
+        position: fixed;
+        z-index: 9999999;
+        flex-direction: column;
+        top: -10em;
+        height: auto;
+        width: 100%;
+        background: rgba(5, 22, 33, 0.7);
+        backdrop-filter: blur(16px);
+        transition: 0.2s linear;
+    }
+
+    .navbar-link {
+        padding: 1em 0em;
+        padding-left: 1em;
+    }
+
+
+
+
+
+
+    /***********************/
+
+
+    #page-1 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/starwars-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+
+    .main-header-container {
+        width: 20em;
+    }
+
+    .download-link-container,
+    .page-content-subheader-container {
+        width: 20em;
+    }
+
+    #main-header {
+        font-size: 2em;
+        margin-top: 3.5em;
+    }
+
+    s .page-content-subheader {
+        font-size: 0.875em;
+        width: 20em;
+    }
+
+
+
+    .skeleton-button {
+        width: 20em;
+        padding: 0.30% 0.25%;
+    }
+
+    .skeleton-button-inner {
+        width: 20em;
+        padding: 0em;
+    }
+
+
+    #logos {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logos-element-left {
+        padding-left: 0em;
+    }
+
+    #logos-left {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logos-element-header {
+        font-size: 0.625em;
+    }
+
+    #logos-right {
+        display: none;
+    }
+
+    /*******************************/
+
+
+
+    #page-2 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/nfs-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+    #page-3 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/witcher-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+    #page-4 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/payday-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+    #page-5 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/warthunder-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+    #page-7 {
+        background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%), url('../../assets/pages/main/background_mobile/illidan-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    /****************************************/
+    #questions {
+        padding-top: 2.5em;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2em;
+        line-height: 1em;
+        color: #FFFFFF;
+    }
+
+    .questions-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20em;
+        height: auto;
+        margin-top: 2.5em;
+    }
+
+    .question-border {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+        border-radius: 16px;
+    }
+
+    .question-inner {
+        margin: 0.3% 0.3%;
+        padding: 1em 2.3em;
+        width: 20em;
+        height: auto;
+        background: #000F1C;
+        border-radius: 16px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        transition: 0.2s linear;
+    }
+
+    .question-row,
+    .answer-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .question-row::after {
+        display: none;
+    }
+
+    .answer-row {
+        display: none;
+        transition: 0.2s linear;
+    }
+
+
+
+    .question-text-desktop {
+        display: none;
+    }
+
+    .question-text-mobile {
+        display: block;
+        width: 20em;
+        padding: 2% 0%;
+        width: fit-content;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1em;
+        color: #FFFFFF;
+    }
+
+    .answer-text {
+        text-align: justify;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #A0B4CB;
+        text-align: left;
+        padding-top: 1em;
+        padding-bottom: 0em;
+        padding-right: 0em;
+    }
+
+    /********************************************/
+
+    #page-7 {
+        height: 100vh;
+    }
+
+    .illidan-speaks-inner {
+        margin-bottom: 2em;
+    }
+
+    .illidan-speaks {
+        background: url("/assets//misc/comic-bubble-mobile.svg");
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 20em;
+        height: 12.7em;
+        position: relative;
+        top: 0em;
+        left: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        top: 4em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .illidan-speaks-inner {
+        padding-top: 3em;
+    }
+
+
+    #illidan-speaks-header {
+        font-family: "Ubuntu", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 0.5em;
+        color: #FFFFFF;
+        padding-bottom: 1em;
+    }
+
+    /**************************/
+
+    footer {
+        display: none;
+    }
+
+    #footer-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        top: 45%;
+    }
+
+    #footer-img {
+        width: auto;
+        height: 1.25em;
+    }
+
+    #footer-img-pilot {
+        padding-bottom: 0.3em;
+        width: auto;
+        height: 1.25em;
+    }
+
+    #footer-img-origin {
+        width: auto;
+        height: 1.25em;
+    }
+
+    .footer-link-row {
+        padding-left: 1.25em;
+        margin-bottom: 1.25em;
+    }
+
+
+    .active {
+        display: flex
+    }
+
+    .inactive {
+        display: none;
+    }
+
+    .pressed {
+        display: flex;
+        top: 3.6em;
+    }
+
+    .unpressed {
+        display: none;
+        transition: 4s linear;
+    }
+
+
+}

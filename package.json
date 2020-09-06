@@ -1,0 +1,30 @@
+{
+  "name": "loudplay",
+  "version": "1.0.0",
+  "description": "Landing Page for Loudplay",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "landing",
+    "gaming"
+  ],
+  "author": "",
+  "license": "",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKlygov/loudplay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DKlygov/loudplay/issues"
+  },
+  "homepage": "https://github.com/DKlygov/loudplay#readme"
+}

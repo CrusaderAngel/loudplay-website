@@ -1,0 +1,1133 @@
+/* General settings 
+----------------------------------------------------------------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: flex
+}
+
+.pressed {
+  display: flex;
+}
+
+.unpressed {
+  display: none;
+}
+
+body {
+  width: auto;
+  background-color: #051621;
+  font-size: calc(100vh / 48);
+}
+
+/*Navbar
+----------------------------------------------------------------------------------*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0em;
+  width: 100%;
+  height: 5em;
+  background: rgba(5, 22, 33, 0.7);
+  backdrop-filter: blur(16px);
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#navbar-main-link {
+  line-height: 0em;
+  transition: 1s linear;
+}
+
+.navbar-link:hover {
+  color: #ff2f02;
+}
+
+#navbar-links,
+#navbar-misc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-links {
+  padding-left: 2.5em;
+}
+
+#navbar-misc {
+  padding-right: 2.5em;
+}
+
+.navbar-link {
+  color: #ffffff;
+  padding-left: 2.5em;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+#lang-select {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+#jivo,
+#lang {
+  padding-right: 2.5em;
+}
+
+#navbar-download-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#navbar-download-link-content {
+  padding: 0.75em 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+  opacity: 0.4;
+  color: #ffffff;
+  font-size: 0.875em;
+  line-height: 1.125em;
+  letter-spacing: 0.05em;
+  transition: 0.2s linear;
+  border-radius: 10px;
+}
+
+#headset,
+#globe {
+  width: 130%;
+  height: 130%;
+}
+
+#download-link-content:hover,
+#navbar-download-link-content:hover {
+  opacity: 0.8;
+}
+
+#download-link-content:active,
+#navbar-download-link-content:active {
+  opacity: 1;
+}
+
+#download-link-content:disabled,
+#navbar-download-link-content:disabled {
+  opacity: 0.6;
+}
+
+/* About 
+----------------------------------------------------------------------------------*/
+.about-main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+
+  background: linear-gradient(180deg,
+      rgba(5, 22, 33, 0) 33.08%,
+      rgba(5, 22, 33, 0.38) 69.97%,
+      #051621 94.67%),
+    url(/assets/pages/about/others-desktop/about-main.svg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-container {
+  margin-left: 7.4em;
+  margin-bottom: 6.1em;
+}
+
+.about-main-page-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+  line-height: 1.17em;
+  padding-bottom: 0.8em;
+
+  color: white;
+}
+
+.about-main-page-text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.33em;
+
+  color: white;
+}
+
+/* Heroes pic + text (radiant and dire)
+----------------------------------------------------------------------------------*/
+.heroes-left {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70.1em;
+  height: 16em;
+
+  margin-bottom: 1.5em;
+}
+
+.heroes-pic-left {
+  position: static;
+
+  width: auto;
+  height: 30.6em;
+
+  margin-left: 1.8em;
+}
+
+.heroes-left-text {
+  position: absolute;
+  left: 13em;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.33em;
+
+  color: #ffffff;
+}
+
+.heroes-right {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70.1em;
+  height: 16em;
+
+  margin-bottom: 1.5em;
+}
+
+.heroes-pic-right {
+  position: static;
+
+  width: auto;
+  height: 30.6em;
+  margin-right: 1.5em;
+}
+
+.heroes-right-text {
+  position: absolute;
+  right: 12.7em;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.33em;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+/* Radiant
+----------------------------------------------------------------------------------*/
+
+.radiant-container {
+  background: linear-gradient(180deg,
+      #051621 0%,
+      rgba(5, 22, 33, 0) 11.98%,
+      rgba(5, 22, 33, 0) 88.02%,
+      #051621 100%),
+    url(/assets/pages/about/about-radiant/radiant-bg.svg), #000f1b;
+  width: 100%;
+  height: 111.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 6.25em;
+  margin-bottom: 21.25em;
+}
+
+.radiant-title {
+  width: auto;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.25em;
+
+  color: #ffffff;
+
+  margin-left: 3.7em;
+  margin-bottom: 5em;
+}
+
+.radiant-title span {
+  background: -webkit-linear-gradient(180deg, #00ff75 100%, #01c2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.radiant-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dire
+----------------------------------------------------------------------------------*/
+
+.dire-container {
+  background: linear-gradient(180deg,
+      #051621 0%,
+      rgba(5, 22, 33, 0) 46.88%,
+      #051621 100%),
+    url(/assets/pages/about/about-dire/dire-bg.svg);
+  width: 100%;
+  height: 111.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2em;
+}
+
+.dire-title {
+  width: auto;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.25em;
+
+  color: #ffffff;
+
+  margin-top: -7.6em;
+  margin-left: 3.7em;
+  margin-bottom: 5em;
+}
+
+.dire-title span {
+  background: -webkit-linear-gradient(180deg, #ff2f01 100%, #ff055f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dire-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Process
+----------------------------------------------------------------------------------*/
+.swiper-image-mobile {
+  display: none;
+}
+
+.process-container {
+  width: 90.2em;
+  height: auto;
+
+  margin-left: 7.5em;
+  margin-bottom: 6.88em;
+}
+
+.process-title {
+  width: auto;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8em;
+  line-height: 1.25em;
+
+  margin-bottom: 2.4em;
+
+  color: #ffffff;
+}
+
+.slider-contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 3em;
+}
+
+.swiper-wrapper {
+  gap: 2.5em;
+  cursor: grab;
+}
+
+.swiper-slide {
+  width: 25.25em !important;
+}
+
+.swiper-image {
+  width: 16.25em;
+  height: 10.63em;
+}
+
+.swiper-points-img {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  top: 2.5em;
+  right: 0.8em;
+}
+
+.swiper-items {
+  width: 84.5em;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+
+  margin-left: -6em;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+  stroke: none;
+  outline: 0px solid transparent !important;
+}
+
+.swiper-button-prev {
+  position: relative !important;
+  outline: 0px solid transparent !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+.swiper-button-next {
+  position: relative !important;
+  outline: 0px solid transparent !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+#arrow-left:focus,
+#arrow-left:active,
+#arrow-right:focus,
+#arrow-right:active {
+  outline: none !important;
+  stroke: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+#arrow-left {
+  width: 4em;
+  height: 4em;
+  stroke: none;
+  outline: none;
+}
+
+#arrow-right {
+  width: 4em;
+  height: 4em;
+  stroke: none;
+  outline: none;
+}
+
+.swiper-scrollbar {
+  height: 0.2em;
+  width: 75em;
+  background-color: #102938 !important;
+
+  cursor: grab;
+}
+
+.swiper-scrollbar-drag {
+  color: white;
+
+  background-color: white !important;
+}
+
+/* Partnership
+----------------------------------------------------------------------------------*/
+
+.partnership-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70.25em;
+  height: 14.31em;
+
+  margin-left: 7.5em;
+  margin-bottom: 8.75em;
+}
+
+.partnership-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 2.5em;
+
+  align-self: flex-start;
+
+  color: #ffffff;
+}
+
+.partnership-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70.25em;
+}
+
+.partner-elem {
+  margin-right: 2.5em;
+}
+
+.partner-elem:last-child {
+  margin-right: 0em;
+}
+
+.partner-text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  margin-bottom: 1.25em;
+
+  color: #ffffff;
+}
+
+.forbes-pic {
+  width: 3.6em;
+  height: 1.5em;
+}
+
+.telecom-pic {
+  width: 4.83em;
+  height: 1.5em;
+}
+
+.rostelecom-pic {
+  width: 4.13em;
+  height: 1.5em;
+}
+
+.kommersant-pic {
+  width: 7.26em;
+  height: 1em;
+}
+
+/* Footer
+----------------------------------------------------------------------------------*/
+#footer-mobile {
+  display: none;
+}
+
+footer {
+  position: relative;
+  top: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.footer-link-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-link {
+  padding-right: 2em;
+}
+
+#footer-img {
+  width: 120%;
+  height: auto;
+}
+
+#footer-img-pilot {
+  padding-bottom: 0.3em;
+  width: 120%;
+  height: auto;
+}
+
+#footer-img-origin {
+  width: 150%;
+  height: auto;
+}
+
+/* Mobile 
+------------------------------------------------------------------------------------------------*/
+
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 420px) {
+  body {
+    font-size: calc(100vw / 22.5);
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .active {
+    display: flex
+  }
+
+  .pressed {
+    display: flex;
+  }
+
+  .unpressed {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    flex-direction: column;
+    top: -10em;
+    height: auto;
+    width: 100%;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+    transition: 0.2s linear;
+  }
+
+  .navbar-link {
+    padding: 1em 0em;
+    padding-left: 1em;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 3.56em;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-burger {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 0em;
+  }
+
+  #navbar-links {
+    padding-left: 0em;
+  }
+
+  #navbar-main-link {
+    padding-left: 1em;
+  }
+
+  navbar-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #navbar-download-link-mobile {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  #navbar-misc {
+    padding-right: 0em;
+  }
+
+  #navbar-download-link-content-mobile {
+    padding: 0.75em 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    opacity: 0.4;
+    color: #FFFFFF;
+    font-size: 0.75em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  #navbar-download-link-content-mobile:active {
+    opacity: 1;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    flex-direction: column;
+    top: -10em;
+    height: auto;
+    width: 100%;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+    transition: 0.2s linear;
+  }
+
+  .navbar-link {
+    padding: 1em 0em;
+    padding-left: 1em;
+  }
+
+  /* About Mobile
+----------------------------------------------------------------------------------*/
+  .about-main-page {
+    display: block;
+    background: url(/assets/pages/about/mobile/about-main-mobile.svg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 4em;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2.5em;
+
+    padding-top: 22em;
+    width: 20em;
+  }
+
+  .about-main-page-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.25em;
+
+    margin-bottom: 0.8em;
+    padding-bottom: 0;
+
+    color: white;
+  }
+
+  .about-main-page-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.71em;
+
+    color: white;
+  }
+
+  /* Heroes pic + text (radiant and dire) Mobile
+----------------------------------------------------------------------------------*/
+  .heroes-left {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 22.5em;
+    height: 16em;
+
+    margin-bottom: 0;
+  }
+
+  .heroes-pic-left {
+    position: static;
+    top: 0;
+    left: 0;
+
+    width: 9.61em;
+    height: 15.75em;
+    margin-left: 0;
+  }
+
+  .heroes-left-text {
+    position: static;
+    left: 0;
+    bottom: 0;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.43em;
+
+    color: #ffffff;
+  }
+
+  .heroes-right {
+    position: static;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    width: 22.5em;
+    height: 16em;
+
+    margin-bottom: 0;
+  }
+
+  .heroes-pic-right {
+    position: static;
+    top: 0;
+    left: 0;
+
+    width: 9.61em;
+    height: 15.75em;
+    margin-right: 0;
+  }
+
+  .heroes-right-text {
+    position: static;
+    left: 0;
+    bottom: 0;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.43em;
+
+    color: #ffffff;
+  }
+
+  /* Radiant Mobile
+----------------------------------------------------------------------------------*/
+
+  .radiant-container {
+    background: url(/assets/pages/about/mobile/radiant-bg-mobile.svg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 5em;
+  }
+
+  .radiant-title {
+    width: 16em;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    color: #ffffff;
+
+    padding-top: 2.5em;
+    margin: 0 auto 2.5em;
+  }
+
+  .radiant-title br {
+    display: none;
+  }
+
+  .radiant-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #morphling-text br {
+    display: none;
+  }
+
+  #bristle-text br {
+    display: none;
+  }
+
+  /* Dire Mobile
+----------------------------------------------------------------------------------*/
+
+  .dire-container {
+    background: url(/assets/pages/about/mobile/dire-bg-mobile.svg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+  }
+
+  .dire-title {
+    width: 16em;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    color: #ffffff;
+
+    padding-top: 2.5em;
+    margin: 0 auto 2.5em;
+  }
+
+  .dire-title br {
+    display: none;
+  }
+
+  .dire-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #riki-text br {
+    display: none;
+  }
+
+  /* Process mobile
+----------------------------------------------------------------------------------*/
+  .swiper-image {
+    display: none;
+  }
+
+  .process-container {
+    width: 20em;
+    height: auto;
+
+    margin: 0 auto 2.5em;
+  }
+
+  .process-title {
+    width: auto;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    margin-bottom: 2.4em;
+
+    color: #ffffff;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 3em;
+  }
+
+  .swiper-wrapper {
+    gap: 0em;
+  }
+
+  .swiper-slide {
+    width: 14em !important;
+  }
+
+  .swiper-image-mobile {
+    display: inline;
+
+    width: 11.25em;
+    height: 10.63em;
+  }
+
+  .swiper-points-img {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    top: 4.5em;
+    right: 0.7em;
+  }
+
+  .swiper-items {
+    width: 20em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 0 auto 5em;
+  }
+
+  .swiper-scrollbar {
+    height: 0.2em;
+    width: 13.5em;
+    background-color: #102938 !important;
+  }
+
+  /* Partnership Mobile
+----------------------------------------------------------------------------------*/
+
+  .partnership-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 22.5em;
+    height: auto;
+
+    margin: 0 auto;
+  }
+
+  .partnership-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    width: 16em;
+    align-self: flex-start;
+    margin: 0 auto 1.25em;
+
+    color: #ffffff;
+  }
+
+  .partnership-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 22.5em;
+    margin: 0 auto;
+  }
+
+  .partner-elem {
+    margin: 0 auto 2.5em;
+    width: 19.5em;
+  }
+
+  .partner-elem:last-child {
+    margin-right: auto;
+  }
+
+  .partner-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    margin-bottom: 1.5em;
+
+    color: #ffffff;
+  }
+
+  .forbes-pic {
+    width: 3.6em;
+    height: 1.5em;
+  }
+
+  .telecom-pic {
+    width: 4.83em;
+    height: 1.5em;
+  }
+
+  .rostelecom-pic {
+    width: 4.13em;
+    height: 1.5em;
+  }
+
+  .kommersant-pic {
+    width: 7.26em;
+    height: 1em;
+  }
+
+  /* Footer Mobile
+----------------------------------------------------------------------------------*/
+  footer {
+    display: none;
+  }
+
+  #footer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top: 45%;
+  }
+
+  #footer-img {
+    width: auto;
+    height: 1.25em;
+  }
+
+  #footer-img-pilot {
+    padding-bottom: 0.3em;
+    width: auto;
+    height: 1.4em;
+  }
+
+  #footer-img-origin {
+    width: auto;
+    height: 1.5em;
+  }
+
+  #footer-img-bliz {
+    width: auto;
+    height: 1.5em;
+  }
+
+  .footer-link-row {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+}
