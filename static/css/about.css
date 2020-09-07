@@ -634,11 +634,11 @@ footer {
     display: flex;
   }
 
-  .pressed {
+  .unpressed {
     display: flex;
   }
 
-  .unpressed {
+  .pressed {
     display: none;
   }
 
@@ -672,7 +672,7 @@ footer {
   }
 
   #navbar-main-link {
-    padding-left: 1em;
+    margin-left: 1em;
   }
 
   #navbar-download-link-mobile {
@@ -1136,5 +1136,23 @@ footer {
   .footer-link-row {
     padding-left: 1.25em;
     margin-bottom: 1.25em;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .pressed {
+    display: flex;
+    top: 3.6em;
+  }
+
+  .unpressed {
+    display: none;
+    transition: 4s linear;
   }
 }
