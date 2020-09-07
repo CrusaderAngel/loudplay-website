@@ -171,12 +171,10 @@ a {
   justify-content: flex-end;
   align-items: end;
 
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(5, 22, 33, 0) 33.08%,
       rgba(5, 22, 33, 0.38) 69.97%,
-      #051621 94.67%
-    ),
+      #051621 94.67%),
     url(/assets/pages/about/others-desktop/about-main.svg);
   width: 100%;
   height: 100vh;
@@ -288,13 +286,11 @@ a {
 ----------------------------------------------------------------------------------*/
 
 .radiant-container {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       #051621 0%,
       rgba(5, 22, 33, 0) 11.98%,
       rgba(5, 22, 33, 0) 88.02%,
-      #051621 100%
-    ),
+      #051621 100%),
     url(/assets/pages/about/about-radiant/radiant-bg.svg), #000f1b;
   width: 100%;
   height: 111.5em;
@@ -336,12 +332,10 @@ a {
 ----------------------------------------------------------------------------------*/
 
 .dire-container {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       #051621 0%,
       rgba(5, 22, 33, 0) 46.88%,
-      #051621 100%
-    ),
+      #051621 100%),
     url(/assets/pages/about/about-dire/dire-bg.svg);
   width: 100%;
   height: 111.5em;
@@ -590,6 +584,8 @@ a {
   display: none;
 }
 
+
+
 footer {
   position: relative;
   top: 65%;
@@ -735,9 +731,11 @@ footer {
   }
 
   .navbar-link {
-    padding: 1em 0em;
-    padding-left: 1em;
+    padding: 1.2em 0em;
+    text-align: center;
   }
+ 
+
 
   /* About Mobile
 ----------------------------------------------------------------------------------*/
@@ -1165,4 +1163,5 @@ footer {
     display: none;
     transition: 4s linear;
   }
+
 }

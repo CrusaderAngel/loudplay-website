@@ -15,6 +15,10 @@
   display: none;
 }
 
+.hoverl_c5d {
+  display: none;
+}
+
 
 .inactive {
   display: none;
@@ -365,8 +369,8 @@ img {
   }
 
   .navbar-link {
-    padding: 1em 0em;
-    padding-left: 1em;
+    padding: 1.2em 0em;
+    text-align: center;
   }
   .download-page {
     height: auto;

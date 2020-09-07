@@ -494,8 +494,8 @@ footer {
   }
 
   .navbar-link {
-    padding: 1em 0em;
-    padding-left: 1em;
+    padding: 1.2em 0em;
+    text-align: center;
   }
 
   #desktop {

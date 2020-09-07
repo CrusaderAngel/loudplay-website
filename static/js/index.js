@@ -13,12 +13,23 @@ const CURRENTLANGUAGE = LanguageManipulator.getCurrentLanguage();
 const PAGENAME = LanguageManipulator.getPagename();
 const ELEMENTS = LanguageManipulator.getElementsToTranslate(PAGENAME);
 
+if(CURRENTLANGUAGE == 'en') {
+    document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
+}else{
+    document.querySelector('#globe').src = '/assets/misc/globe.svg'
+}
+
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
 }
 
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
+    if(NEWLANG == 'en') {
+        document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
+    }else{
+        document.querySelector('#globe').src = '/assets/misc/globe.svg'
+    }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
 
 }

@@ -671,6 +671,8 @@ footer {
     padding-left: 0em;
   }
 
+
+
   #navbar-main-link {
     margin-left: 1em;
   }
@@ -769,8 +771,8 @@ footer {
   }
 
   .navbar-link {
-    padding: 1em 0em;
-    padding-left: 1em;
+    padding: 1.2em 0em;
+    text-align: center;
   }
 
   /***********************/

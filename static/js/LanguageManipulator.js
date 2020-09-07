@@ -6,8 +6,10 @@ export default class LanguageManipulator {
             if(!localStorage.getItem('lang')) {
                 if(navigator.language == 'ru-RU') {
                     localStorage.setItem('lang', 'ru');
+                    document.querySelector('#globe').src = '/assets/misc/globe.svg'
                 }else {
-                    localStorage.setItem('lang', 'en')
+                    localStorage.setItem('lang', 'en');
+                    document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
                 };
             };
         };
@@ -32,8 +34,7 @@ export default class LanguageManipulator {
 
         static getPagename() {
             let pageName;
-            console.log(window.location.pathname == '/')
-            if(window.location.pathname == '/') {
+            if(window.location.pathname == '/' || window.location.pathname == '/index.html') {
                 pageName = '/'
             } else {
                 pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
@@ -50,10 +51,10 @@ export default class LanguageManipulator {
                     return [".navbar-link", "#download-header", "#download-subheader", ".download-option-element-text"];
                     break;
                 case 'about':
-                    return [".navbar-link", "#navbar-download-link-content", ".about-main-page-title", ".about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".partnership-title", ".partner-text"];
+                    return [".navbar-link", "#navbar-download-link-content", "#navbar-download-link-content-mobile", ".about-main-page-title", ".about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".partnership-title", ".partner-text"];
                     break;
                 case '/':
-                    return ['.navbar-link', '#navbar-download-link-content', "#navbar-download-link-content-mobile", "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".questions-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
+                    return ['.navbar-link', '#navbar-download-link-content', "#navbar-download-link-content-mobile", "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".question-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
                     break;
             };
         };
