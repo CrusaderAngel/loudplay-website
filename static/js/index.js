@@ -2,7 +2,6 @@ import LanguageManipulator from './LanguageManipulator';
 import BurgerManipulator from './BurgerManipulator';
 
 
-document.addEventListener('load', switchLang);
 document.getElementById('globe').addEventListener('click', switchLang);
 document.querySelector('.burger-icon').addEventListener('click', BurgerManipulator.openMenu);
 document.querySelector('.burger-cross').addEventListener('click', BurgerManipulator.closeMenu);
@@ -18,6 +17,7 @@ function renderDefaultText() {
 }
 
 function switchLang() {
+    console.log('fire')
     const NEWLANG = LanguageManipulator.setNewLanguage();
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
 
