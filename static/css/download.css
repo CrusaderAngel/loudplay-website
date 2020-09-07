@@ -288,7 +288,7 @@ img {
     position: fixed;
     width: 100%;
     top: 0px;
-    height: 3.56em;
+    height: 5em;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
   }
@@ -372,6 +372,7 @@ img {
     padding: 1.2em 0em;
     text-align: center;
   }
+
   .download-page {
     height: auto;
   }
@@ -447,5 +448,9 @@ img {
   .unpressed {
     display: none;
     transition: 4s linear;
+  }
+
+  .buger-icon {
+    display: none;
   }
 }

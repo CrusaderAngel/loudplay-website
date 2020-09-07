@@ -1,6 +1,7 @@
 export default class BurgerManipulator {
    static  openMenu() {
         let menu = document.querySelectorAll('.menu-mobile');
+        document.querySelector('.burger-icon').classList.toggle('active');
         document.querySelector('.burger-icon').classList.toggle('inactive');
         document.querySelector('.burger-cross').classList.toggle('inactive');
         document.querySelector('.burger-cross').classList.toggle('active');
