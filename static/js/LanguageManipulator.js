@@ -31,8 +31,12 @@ export default class LanguageManipulator {
         };
 
         static getPagename() {
-            console.log(window.location.pathname)
-            let pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
+            let pageName;
+            if(window.location.pathname == '/') {
+                pageName = '/'
+            } else {
+                window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
+            }
             return pageName;
         };
 
@@ -47,7 +51,7 @@ export default class LanguageManipulator {
                 case 'about':
                     return [".navbar-link", "#navbar-download-link-content", ".about-main-page-title", ".about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".partnership-title", ".partner-text"];
                     break;
-                default:
+                case '/':
                     return ['.navbar-link', '#navbar-download-link-content', "#navbar-download-link-content-mobile", "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".questions-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
                     break;
             };
