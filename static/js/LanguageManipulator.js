@@ -32,6 +32,7 @@ export default class LanguageManipulator {
 
         static getPagename() {
             let pageName;
+            console.log(window.location.pathname == '/')
             if(window.location.pathname == '/') {
                 pageName = '/'
             } else {
