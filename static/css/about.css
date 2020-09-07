@@ -18,7 +18,7 @@
 }
 
 .active {
-  display: flex
+  display: flex;
 }
 
 .pressed {
@@ -41,6 +41,10 @@ body {
 
 /*Navbar
 ----------------------------------------------------------------------------------*/
+.navbar-mobile {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -158,10 +162,12 @@ a {
   justify-content: flex-end;
   align-items: end;
 
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(5, 22, 33, 0) 33.08%,
       rgba(5, 22, 33, 0.38) 69.97%,
-      #051621 94.67%),
+      #051621 94.67%
+    ),
     url(/assets/pages/about/others-desktop/about-main.svg);
   width: 100%;
   height: 100vh;
@@ -273,11 +279,13 @@ a {
 ----------------------------------------------------------------------------------*/
 
 .radiant-container {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       #051621 0%,
       rgba(5, 22, 33, 0) 11.98%,
       rgba(5, 22, 33, 0) 88.02%,
-      #051621 100%),
+      #051621 100%
+    ),
     url(/assets/pages/about/about-radiant/radiant-bg.svg), #000f1b;
   width: 100%;
   height: 111.5em;
@@ -319,10 +327,12 @@ a {
 ----------------------------------------------------------------------------------*/
 
 .dire-container {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       #051621 0%,
       rgba(5, 22, 33, 0) 46.88%,
-      #051621 100%),
+      #051621 100%
+    ),
     url(/assets/pages/about/about-dire/dire-bg.svg);
   width: 100%;
   height: 111.5em;
@@ -621,7 +631,7 @@ footer {
   }
 
   .active {
-    display: flex
+    display: flex;
   }
 
   .pressed {
@@ -636,27 +646,12 @@ footer {
     display: none;
   }
 
-
-  .menu-mobile {
-    display: flex;
-    position: fixed;
-    z-index: 9999999;
-    flex-direction: column;
-    top: -10em;
-    height: auto;
-    width: 100%;
-    background: rgba(5, 22, 33, 0.7);
-    backdrop-filter: blur(16px);
-    transition: 0.2s linear;
-  }
-
-  .navbar-link {
-    padding: 1em 0em;
-    padding-left: 1em;
-  }
-
+  /* Navbar mobile
+------------------------------------------------------------------------------------------------*/
   .navbar-mobile {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -680,12 +675,6 @@ footer {
     padding-left: 1em;
   }
 
-  navbar-mobile {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
   #navbar-download-link-mobile {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -696,12 +685,12 @@ footer {
 
   #navbar-download-link-content-mobile {
     padding: 0.75em 1.5em;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
     opacity: 0.4;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 0.75em;
     line-height: 1.125em;
     letter-spacing: 0.05em;
@@ -711,6 +700,16 @@ footer {
 
   #navbar-download-link-content-mobile:active {
     opacity: 1;
+  }
+
+  #download-link-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 3.125em;
+    padding: 0.15em 1.4em;
+    text-align: center;
   }
 
   .menu-mobile {
