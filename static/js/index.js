@@ -23,6 +23,7 @@ function switchLang() {
 
 }
 
+console.log(window.location.pathname)
 
 let classNameArray = ['first', 'second', 'third', 'fourth', 'fifth'];
 
@@ -45,5 +46,3 @@ function openAnswer() {
         }
     });
 };
-
-console.log(navigator.language)
