@@ -1,331 +1,442 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #logo-loudplay {
-    margin: 0em 0em;
+  margin: 0em 0em;
 }
 
 .overlay_79a {
-    display: none !important;
+  display: none !important;
 }
 
-
-.globalClass_9da {
-    display: none;
+.inactive {
+  display: none;
 }
 
+.active {
+  display: flex;
+}
 
+.pressed {
+  display: flex;
+}
+
+.unpressed {
+  display: none;
+}
+
+.label_f2f {
+  display: none;
+}
 
 body {
-    width: auto;
-    background-color: #000F1C;
-    font-size: calc(100vh/48);
-    overflow-x: hidden;
+  width: auto;
+  background-color: #000f1c;
+  font-size: calc(100vh / 48);
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 9999;
-    top: 0em;
-    width: 100vw;
-    height: 5em;
-    background: rgba(5, 22, 33, 0.7);
-    backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0em;
+  width: 100vw;
+  height: 5em;
+  background: rgba(5, 22, 33, 0.7);
+  backdrop-filter: blur(16px);
 }
 
 #navbar-main-link {
-    line-height: 0em;
-    transition: 1s linear;
+  line-height: 0em;
+  transition: 1s linear;
 }
 
 .navbar-link:hover {
-    color: #FF2F02;
+  color: #ff2f02;
 }
 
 #navbar-links,
 #navbar-misc {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar-links {
-    padding-left: 2.5em;
+  padding-left: 2.5em;
 }
 
 #navbar-misc {
-    padding-right: 2.5em;
+  padding-right: 2.5em;
 }
 
 .navbar-link {
-    color: #FFFFFF;
-    padding-left: 2.5em;
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.75em;
+  color: #ffffff;
+  padding-left: 2.5em;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75em;
 }
 
-
 #lang-select {
-    color: #FFFFFF;
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.75em;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75em;
 }
 
 #jivo,
 #lang {
-    padding-right: 2.5em;
+  padding-right: 2.5em;
 }
 
 .navbar-mobile {
-    display: none;
+  display: none;
 }
 
 #navbar-download-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #navbar-download-link-content {
-    padding: 0.75em 1.5em;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
-    opacity: 0.4;
-    color: #FFFFFF;
-    font-size: 0.875em;
-    line-height: 1.125em;
-    letter-spacing: 0.05em;
-    transition: 0.2s linear;
-    border-radius: 10px;
+  padding: 0.75em 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+  opacity: 0.4;
+  color: #ffffff;
+  font-size: 0.875em;
+  line-height: 1.125em;
+  letter-spacing: 0.05em;
+  transition: 0.2s linear;
+  border-radius: 10px;
 }
 
 #headset,
 #globe {
-    width: 130%;
-    height: 130%;
+  width: 130%;
+  height: 130%;
 }
 
 .label_f2f {
-    display: none;
+  display: none;
 }
 
 /**************Actual download content************/
 
-
 .download-page {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 #download-header {
-    padding-top: 3.26em;
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2em;
-    color: #FFFFFF;
+  padding-top: 3.26em;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
 }
 
 #download-subheader {
-    padding-top: 1em;
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    ;
-    color: #FFFFFF;
+  padding-top: 1em;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  color: #ffffff;
 }
 
-
 .page-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .download-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items: center; */
-    width: 57.5em;
-    margin: auto;
-    margin-top: 4.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 57.5em;
+  margin: auto;
+  margin-top: 4.2em;
 }
 
-
-
 .download-option-element {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 17.5em;
-    height: 17.5em;
-    margin-right: 2.5em;
-    background: linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
-    border-radius: 1.56em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17.5em;
+  height: 17.5em;
+  margin-right: 2.5em;
+  background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+  border-radius: 1.56em;
 }
 
 .download-option-element-text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FFFFFF;
-    border-radius: 0.5em;
-    width: 15em;
-    height: 3.125em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 0.5em;
+  width: 15em;
+  height: 3.125em;
 }
 
 .download-option-element-text {
-    font-family: "Ubuntu", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.875em;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: -webkit-linear-gradient(180deg, #FF2F01 0%, #FF055F 100%);
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
 }
 
 img {
-    margin-top: 2.2em;
-    margin-bottom: 2.8em;
+  margin-top: 2.2em;
+  margin-bottom: 2.8em;
 }
 
 #pc {
-    width: 9.36em;
-    height: auto;
+  width: 9.36em;
+  height: auto;
 }
 
 #mac {
-    width: 8.53em;
-    height: auto;
+  width: 8.53em;
+  height: auto;
 }
 
 #android {
-    width: 5em;
-    height: auto;
+  width: 5em;
+  height: auto;
 }
 
 .menu-mobile {
+  display: none;
+  position: fixed;
+  top: -10em;
+  height: auto;
+  width: 100%;
+  background: rgba(5, 22, 33, 0.7);
+  backdrop-filter: blur(16px);
+  transition: 0.2s linear;
+}
+
+.menu-active {
+  top: 3.66em;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .inactive {
     display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .unpressed {
+    display: flex;
+  }
+
+  .pressed {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 3.56em;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-burger {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 0em;
+  }
+
+  #navbar-links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-left: 0em;
+  }
+
+  .burger {
+    padding-right: 1em;
+  }
+
+  #navbar-main-link {
+    margin-left: 1em;
+  }
+
+  #navbar-download-link-mobile {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  #navbar-misc {
+    padding-right: 0em;
+  }
+
+  #navbar-download-link-content-mobile {
+    padding: 0.75em 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 0.4;
+    color: #ffffff;
+    font-size: 0.75em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  #navbar-download-link-content-mobile:active {
+    opacity: 1;
+  }
+
+  #download-link-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 3.125em;
+    padding: 0.15em 1.4em;
+    text-align: center;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    flex-direction: column;
     top: -10em;
     height: auto;
     width: 100%;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
     transition: 0.2s linear;
-}
+  }
 
-.menu-active {
-    top: 3.66em;
-}
+  .navbar-link {
+    padding: 1em 0em;
+    padding-left: 1em;
+  }
+  .download-page {
+    height: auto;
+  }
 
+  .menu-mobile {
+    display: flex;
+  }
 
+  .download-page {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #download-header {
+    margin-top: 1em;
+    text-align: center;
+    width: 12em;
+    font-size: 1.25em;
+  }
 
-@media (min-width:320px) and (max-width: 420px) {
-    .navbar {
-        display: none;
-    }
+  #download-subheader {
+    width: 18em;
+  }
 
-    .navbar-mobile {
-        display: flex;
-        position: fixed;
-        background: rgba(5, 22, 33, 0.7);
-        backdrop-filter: blur(16px);
-        width: 100%;
-    }
+  .download-options {
+    width: 20em;
+    margin-top: 2em;
+  }
 
-    .download-page {
-        height: auto;
-    }
+  .page-content {
+    width: 20em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .mobile-burger {
-        display: block;
-        width: 24px;
-        height: 24px;
-        margin: 0.2em;
-    }
+  .download-option-element {
+    margin-right: 0em;
+    margin-bottom: 1em;
+    width: 20em;
+    height: 13.125em;
+  }
 
+  #pc,
+  #mac,
+  #android {
+    height: 5em;
+    width: auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
 
-    .menu-mobile {
-        display: flex;
-    }
+  .download-option-element-text-wrapper {
+    margin-top: 1em;
+  }
 
-    .download-page {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .active {
+    display: flex;
+  }
 
-    #download-header {
-        margin-top: 1em;
-        text-align: center;
-        width: 12em;
-        font-size: 1.25em;
-    }
+  .inactive {
+    display: none;
+  }
 
-    #download-subheader {
-        width: 18em;
-    }
+  .pressed {
+    display: flex;
+    top: 3.6em;
+  }
 
-    .download-options {
-        width: 20em;
-        margin-top: 2em;
-    }
-
-    .page-content {
-        width: 20em;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .download-option-element {
-        margin-right: 0em;
-        margin-bottom: 1em;
-        width: 20em;
-        height: 13.125em;
-    }
-
-    #pc,
-    #mac,
-    #android {
-        height: 5em;
-        width: auto;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-    }
-
-    .download-option-element-text-wrapper {
-        margin-top: 1em;
-    }
-
+  .unpressed {
+    display: none;
+    transition: 4s linear;
+  }
 }
