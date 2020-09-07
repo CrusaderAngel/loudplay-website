@@ -35,7 +35,7 @@ export default class LanguageManipulator {
             if(window.location.pathname == '/') {
                 pageName = '/'
             } else {
-                window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
+                pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
             }
             return pageName;
         };
