@@ -31,6 +31,7 @@ export default class LanguageManipulator {
         };
 
         static getPagename() {
+            console.log(window.location.pathname)
             let pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
             return pageName;
         };
