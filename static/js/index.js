@@ -15,9 +15,8 @@ const ELEMENTS = LanguageManipulator.getElementsToTranslate(PAGENAME);
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
+
 }
-
-
 
 let classNameArray = ['first', 'second', 'third', 'fourth', 'fifth'];
 
@@ -40,8 +39,4 @@ function openAnswer() {
         }
     });
 };
-
-
-
-
 

@@ -3,9 +3,6 @@
     padding: 0px;
 }
 
-.overlay_79a {
-    display: none !important;
-  }
 
 body {
     width: auto;
@@ -674,3 +671,9 @@ footer {
     }
 
 }
+
+
+
+.overlay_79a {
+    display: none !important;
+  }
