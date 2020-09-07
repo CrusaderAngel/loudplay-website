@@ -7,9 +7,14 @@
   margin: 0em 0em;
 }
 
-.overlay_79a {
+.__jivoMobileButton {
   display: none !important;
 }
+
+.hlabel_7e6 {
+  display: none;
+}
+
 
 .inactive {
   display: none;

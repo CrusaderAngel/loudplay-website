@@ -3,8 +3,12 @@
   padding: 0px;
 }
 
-.overlay_79a {
+.__jivoMobileButton {
   display: none !important;
+}
+
+.label_7e6 {
+  display: none;
 }
 
 

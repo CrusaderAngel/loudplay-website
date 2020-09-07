@@ -10,8 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-.overlay_79a {
+.__jivoMobileButton {
   display: none !important;
+}
+
+.label_7e6 {
+  display: none;
 }
 
 .inactive {
