@@ -9,6 +9,10 @@
   padding: 0px;
 }
 
+.overlay_79a {
+  display: none !important;
+}
+
 .inactive {
   display: none;
 }

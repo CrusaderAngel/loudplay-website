@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.overlay_79a {
+    display: none !important;
+  }
+
 body {
     width: auto;
     background-color: #051621;

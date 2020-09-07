@@ -2,11 +2,13 @@
     "main": {
 
         "ru": {
-            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
+            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
             "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС"],
             "#main-header": ["ИГРОВОЙ КОМПЬЮТЕР<br>ДЛЯ ИЗБРАННЫХ"],
             ".logos-element-header": ["Являемся резидентами", "Работаем на технологии", "Доступно на"],
             ".page-content-subheader": ["С облачным геймингом<br>любую игру запустить сможешь ты!"],
+            "#page-content-header-left": ["ПРОКАЧАЙ<br>СВОЮ ТАЧКУ", "НЕ ПЕРЕПЛАЧИВАЙ<br>ЗА НЕИЗВЕСТНОЕ"],
+            "#page-content-header-right": ["НЕ ЗАЦИКЛИВАЙСЯ<br>НА ОДНОЙ", "ПОБЕЖДАЙ НА ЛЮБОЙ<br>ТЕРРИТОРИИ"],
             ".page-content-subheader-left": ["Отложи навсегда покупку мощного компа,<br>твой тоже может выдавать максимум", "Начни играть в облаке бесплатно<br>уже через пару минут"],
             ".page-content-subheader-right": ["Любая игра может стать доступной<br>в нашем открытом мире", "Получи неограниченный доступ к игровому ПК <br id='page-5-br'> и продолжай играть в любом месте"],
             "#download-link-content": ["ДА ПРЕБУДЕТ СО МНОЙ СИЛА", "РАЗГОНИСЬ ДО ПРЕДЕЛА", "ПОРАДУЙ ЛЮБИМУЮ", "ВРЫВАЙСЯ К НАМ", "НЕ БРОСАЙ СВОИХ"],
@@ -14,25 +16,27 @@
             "#questions": ["ЕСТЬ ВОПРОСЫ?"],
             ".question-text-desktop": ["Loudplay - это облачный гейминг. Или нет?", "Есть ли системные требования для облачного ПК?", "Какие игры я могу запустить в облаке?", "Сколько это стоит? Cloud Gaming - это бесплатно?", "Как мне начать играть?"],
             ".questions-text-mobile": ["Что такое Loudplay?", "Какие требования к моему компьютеру?", "Какие игры доступны?", "Сколько это стоит?", "Как мне начать играть?"],
-            ".answer-text-desktop": ["С нами ты можешь превратить любой девайс в современный игровой компьютер. В отличие от других сервисов облачного гейминга, Loudplay – это мощный ПК без ограничений: тебе доступен рабочий стол Windows, можно самому устанавливать игры и приложения для работы и не переживать о сохранении данных.", "Приложение Loudplay работает на любых девайсах с Windows, MacOS и Android. Если компьютер или телефон способен воспроизвести видео на Youtube в нужном тебе качестве – мощности будет достаточно для запуска облачного ПК.<br>Для комфортной игры с облачного ПК нужен стабильный интернет скоростью не менее 10 Мбит/c. Для получения максимального качества мы рекомендуем пользоваться соединением от 30 Мбит/с и подключить свой девайс по проводу или к Wi-Fi сети 5Ghz. Узнать свою скорость ты можешь здесь: https://www.speedtest.net/", "Игровой компьютер Loudplay даёт возможность выбирать абсолютно любую игру для установки. После запуска облачного ПК ты можешь самостоятельно скачать игру из любого магазина или торрент-трекера. Если ранее ты уже купил игру в Steam/Origin, то платить за неё второй раз НЕ НУЖНО.<br>Облачный компьютер подключен к интернету 1 Гбит/c, поэтому загрузка пройдёт очень быстро. Кроме этого, мы специально сделали игровые компьютеры, на которых уже установлена лицензия популярной игры. Если не терпится поиграть – этот вариант подойдет!", "Один час игры стоит от 40 до 49 рублей. Цена зависит от того, сколько игрового времени ты хочешь приобрести за один раз. Кроме того, первый час будет бесплатным – сможешь установить нужную игру, подобрать оптимальные настройки и проконсультироваться с поддержкой.<br>Если хочешь поиграть бесплатно подольше или получить сочные скидки, то прими участие в конкурсах и розыгрышах в нашей группе ВКонтакте или приводи друзей через реферальную программу.", "Выполни несколько простых шагов:<br><br>1. Установи наше приложение на свой девайс;<br>2. Регистрируйся;<br>3. Активируй тестовое время;<br>4. Запускай облачный компьютер и начинай играть;<br><br>Подробный гайд ты можешь найти здесь: https://clck.ru/QYu6G"],
+            ".answer-text": ["С нами ты можешь превратить любой девайс в современный игровой компьютер. В отличие от других сервисов облачного гейминга, Loudplay – это мощный ПК без ограничений: тебе доступен рабочий стол Windows, можно самому устанавливать игры и приложения для работы и не переживать о сохранении данных.", "Приложение Loudplay работает на любых девайсах с Windows, MacOS и Android. Если компьютер или телефон способен воспроизвести видео на Youtube в нужном тебе качестве – мощности будет достаточно для запуска облачного ПК.<br>Для комфортной игры с облачного ПК нужен стабильный интернет скоростью не менее 10 Мбит/c. Для получения максимального качества мы рекомендуем пользоваться соединением от 30 Мбит/с и подключить свой девайс по проводу или к Wi-Fi сети 5Ghz. Узнать свою скорость ты можешь здесь: https://www.speedtest.net/", "Игровой компьютер Loudplay даёт возможность выбирать абсолютно любую игру для установки. После запуска облачного ПК ты можешь самостоятельно скачать игру из любого магазина или торрент-трекера. Если ранее ты уже купил игру в Steam/Origin, то платить за неё второй раз НЕ НУЖНО.<br>Облачный компьютер подключен к интернету 1 Гбит/c, поэтому загрузка пройдёт очень быстро. Кроме этого, мы специально сделали игровые компьютеры, на которых уже установлена лицензия популярной игры. Если не терпится поиграть – этот вариант подойдет!", "Один час игры стоит от 40 до 49 рублей. Цена зависит от того, сколько игрового времени ты хочешь приобрести за один раз. Кроме того, первый час будет бесплатным – сможешь установить нужную игру, подобрать оптимальные настройки и проконсультироваться с поддержкой.<br>Если хочешь поиграть бесплатно подольше или получить сочные скидки, то прими участие в конкурсах и розыгрышах в нашей группе ВКонтакте или приводи друзей через реферальную программу.", "Выполни несколько простых шагов:<br><br>1. Установи наше приложение на свой девайс;<br>2. Регистрируйся;<br>3. Активируй тестовое время;<br>4. Запускай облачный компьютер и начинай играть;<br><br>Подробный гайд ты можешь найти здесь: https://clck.ru/QYu6G"],
             "#illidan-speaks-header": ["Теперь ты готов!"],
             "#footer-download-link-content": ["НАЧАТЬ ИГРАТЬ"]
         },
 
         "en": {
-            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE"],
+            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
             "#navbar-download-link-content": ["PLAY NOW"],
             "#main-header": ["GAMING PC<br>FOR CHOSEN"],
             ".logos-element-header": ["Skolkovo residents", "We work on", "Available for"],
             ".page-content-subheader": ["Like a hero in your favorite game<br>with a cloud gaming feel!"],
+            "#page-content-header-left": ["BOOST UP<br>YOUR GEAR", "NEVER OVERPAY<br>FOR THE UNKNOWN"],
+            "#page-content-header-right": ["DON'T STUCK<br>ON ONE", "WINNER IN<br>ANY AREA"],
             ".page-content-subheader-left": ["Delay buying a powerful PC forever,<br> yours can max out too", "Get started on Cloud Platform<br>for free in a minute"],
             ".page-content-subheader-right": ["Any game is available <br>in our open world", "Get unlimited access to your gaming PC <br id='page-5-br'> and keep playing wherever you are"],
             "#download-link-content": ["MAY THE FORCE BE WITH ME", "SPEED UP TO THE LIMIT", "PLEASE YOUR BELOVED", "BREAK INTO US", "DON'T LEAVE PEOPLE BEHIND"],
             ".skeleton-button-text": ["YOU ARE BULLSHITTING ME"],
-            "#questions": ["ЕСТЬ ВОПРОСЫ?"],
+            "#questions": ["ANY QUESTIONS?"],
             ".question-text-desktop": ["Is Loudplay Cloud Gaming? Or not?", "Are there any system requirements for a cloud PC?", "What games can I run in the cloud?", "How much is it? Is Cloud Gaming Free?", "How can I start playing?"],
             ".questions-text-mobile": ["What is Loudplay?", "What are the requirements for my PC?", "What games are available?", "How much is it?", "How can I start playing?"],
-            ".answer-text-desktop": ["With us you can turn any device into a modern gaming computer. Unlike other cloud gaming services, Loudplay is a powerful PC without limits: you have access to the Windows desktop, you can install games and applications for work yourself, and not worry about saving data.", "The Loudplay app works on any device with Windows, MacOS and Android. If your computer or phone is able to play videos on Youtube in the quality you need, there will be enough power to run a cloud PC.<br>To play comfortably from a cloud PC, you need a stable Internet speed of at least 10 Mbps. For maximum quality, we recommend using a connection of at least 30 Mbps and connecting your device via a Landline or to a 5Ghz Wi-Fi network. You can find out your speed here: https://www.speedtest.net/", "The Loudplay gaming computer makes it possible to choose absolutely any game for installation. After starting the cloud PC, you can download the game from any store or torrent tracker. If you have previously bought the game on Steam / Origin, then you DO NOT NEED to pay for it a second time.<br>The cloud computer is connected to the Internet at 1 Gbps, so the download will be very fast. In addition, we have specific gaming computers which have licensed games already installed.If you want to play NOW , this is your best option.", "One hour of play costs from 40 to 49 rubles. The price depends on how much game time you want to purchase at one time. In addition, the first hour will be free - you can install the game you want, choose the optimal settings and consult with support if you need it.<br>If you want to play for free longer or get juicy discounts, then take part in contests and sweepstakes in our VKontakte group or bring your friends through the referral program.", " Follow a few simple steps:<br><br>1. Install our application on your device;<br>2. Create an account;<br>3. Activate your Free period or buy a specific bundle;<br>4. Launch your cloud computer and start playing;<br><br>You can find a detailed guide here: https://clck.ru/QYu6G"],
+            ".answer-text": ["With us you can turn any device into a modern gaming computer. Unlike other cloud gaming services, Loudplay is a powerful PC without limits: you have access to the Windows desktop, you can install games and applications for work yourself, and not worry about saving data.", "The Loudplay app works on any device with Windows, MacOS and Android. If your computer or phone is able to play videos on Youtube in the quality you need, there will be enough power to run a cloud PC.<br>To play comfortably from a cloud PC, you need a stable Internet speed of at least 10 Mbps. For maximum quality, we recommend using a connection of at least 30 Mbps and connecting your device via a Landline or to a 5Ghz Wi-Fi network. You can find out your speed here: https://www.speedtest.net/", "The Loudplay gaming computer makes it possible to choose absolutely any game for installation. After starting the cloud PC, you can download the game from any store or torrent tracker. If you have previously bought the game on Steam / Origin, then you DO NOT NEED to pay for it a second time.<br>The cloud computer is connected to the Internet at 1 Gbps, so the download will be very fast. In addition, we have specific gaming computers which have licensed games already installed.If you want to play NOW , this is your best option.", "One hour of play costs from 40 to 49 rubles. The price depends on how much game time you want to purchase at one time. In addition, the first hour will be free - you can install the game you want, choose the optimal settings and consult with support if you need it.<br>If you want to play for free longer or get juicy discounts, then take part in contests and sweepstakes in our VKontakte group or bring your friends through the referral program.", " Follow a few simple steps:<br><br>1. Install our application on your device;<br>2. Create an account;<br>3. Activate your Free period or buy a specific bundle;<br>4. Launch your cloud computer and start playing;<br><br>You can find a detailed guide here: https://clck.ru/QYu6G"],
             "#illidan-speaks-header": ["You are ready now!"],
             "#footer-download-link-content": ["GET STARTED"]
         }
@@ -72,8 +76,9 @@
 
     "technology": {
         "ru": {
-            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
+            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
             "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС"],
+            "#navbar-download-link-content-mobile": ["ИГРАТЬ СЕЙЧАС"],
             "#page-1-rectangle-element-header": ["Облачный ПК - это"],
             ".page-1-rectangle-element-text": ["Твой новый способ играть и работать, который не требует серьезных средств для покупки и модернизации комплектующих", "Нужно лишь интернет-соединение и компьютер, соответствующий нашим минимальным рекомендациям."],
             ".page-1-text-content": ["Наши сервера выделяют пространство для твоего облачного ПК", "Экран облачного компьютера транслируется в лаунчер, который ты запускаешь на своем устройстве", "Сигналы с устройства уходят на сервер, благодаря чему ты удаленно управляешь облачным ПК"],
@@ -90,8 +95,9 @@
         },
 
         "en": {
-            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE"],
+            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
             "#navbar-download-link-content": ["PLAY NOW"],
+            "#navbar-download-link-content-mobile": ["PLAY NOW"],
             "#page-1-rectangle-element-header": ["Cloud PC is"],
             ".page-1-rectangle-element-text": ["Your new way to play and work that does not require any serious funds to buy and upgrade the components.", "All you need is an Internet and a computer that meets our minimum recommendations."],
             ".page-1-text-content": ["Our servers provide space for your cloud PC", "The cloud computer screen is being broadcast to the launcher you run on your device.", "Signals from the device are sent to the server, allowing you to remotely manage your cloud PC."],
@@ -110,13 +116,14 @@
 
     "download": {
 
-        "ru": {
+        "ru": {".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
             "#download-header": ["Запусти любые компьютерный игры на своем девайсе"],
             "#download-subheader": ["Для начала игры необходимо установить приложение"],
             ".download-option-element-text": ["Скачать на WINDOWS", "Скачать на MAC", "Cкачать на Android"]
         },
 
         "en": {
+            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
             "#download-header": ["Run any computer games on your device"],
             "#download-subheader": ["Install the application to start the game"],
             ".download-option-element-text": ["Download to Windows", "Download to MAC", "Download on Android"]

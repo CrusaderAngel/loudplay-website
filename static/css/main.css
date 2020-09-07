@@ -4,6 +4,10 @@
 }
 
 
+.overlay_79a {
+    display: none !important;
+  }
+
 
 body {
     width: auto;
