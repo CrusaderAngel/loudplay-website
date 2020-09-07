@@ -4,7 +4,7 @@ import BurgerManipulator from './BurgerManipulator';
 
 window.addEventListener('load', LanguageManipulator.setDefaultLanguage);
 window.addEventListener('load', renderDefaultText);
-document.getElementById('globe').addEventListener('click', switchLang);
+document.querySelectorAll('#globe').forEach(item => item.addEventListener('click', switchLang));
 document.querySelector('.burger-icon').addEventListener('click', BurgerManipulator.openMenu);
 document.querySelector('.burger-cross').addEventListener('click', BurgerManipulator.closeMenu);
 

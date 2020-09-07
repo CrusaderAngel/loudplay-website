@@ -1066,5 +1066,12 @@ footer {
     transition: 4s linear;
   }
 
+  #jivo,
+  #lang {
+    padding-right: 1em;
+  }
 
+  /* #navbar-download-link-content-mobile {
+     display: none !important;
+  } */
 }
