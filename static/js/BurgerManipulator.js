@@ -1,4 +1,4 @@
-export default class BurgetManipulator {
+export default class BurgerManipulator {
    static  openMenu() {
         let menu = document.querySelectorAll('.menu-mobile');
         document.querySelector('.burger-icon').classList.toggle('inactive');
