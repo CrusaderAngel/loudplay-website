@@ -6,7 +6,7 @@ document.addEventListener('load', switchLang);
 document.getElementById('globe').addEventListener('click', switchLang);
 document.querySelector('.burger-icon').addEventListener('click', BurgerManipulator.openMenu);
 document.querySelector('.burger-cross').addEventListener('click', BurgerManipulator.closeMenu);
-
+document.querySelector('#headset').addEventListener('click', )
 
 
 

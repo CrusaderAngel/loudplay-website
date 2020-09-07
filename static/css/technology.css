@@ -83,6 +83,10 @@ a {
     padding-right: 2.5em;
 }
 
+.label_f2f {
+    display: none;
+}
+
 .navbar-mobile {
     display: none;
 }
