@@ -1138,6 +1138,7 @@ footer {
     margin-bottom: 1.25em;
   }
 
+  /* For burger menu */
   .active {
     display: flex;
   }
