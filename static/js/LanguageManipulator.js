@@ -6,11 +6,19 @@ export default class LanguageManipulator {
             if(!this.getCurrentLanguage()) {
                 localStorage.setItem('lang', 'ru')
             }
-        }
+        };
+
+        static renderDefaultText() {
+            let currentLocation = window.location.href;
+            
+            if (currentLocation) {
+
+            }
+        };
 
         static getCurrentLanguage() {
             return localStorage.getItem('lang')
-        }
+        };
 
         static setNewLanguage() {
             let lang = this.getCurrentLanguage();
@@ -24,12 +32,12 @@ export default class LanguageManipulator {
                 lang = 'ru';
                 return lang
             }
-        }
+        };
 
         static getPagename() {
             let pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
             return pageName;
-        }
+        };
 
         static getElementsToTranslate(pageName) {
             switch (pageName) {
@@ -45,8 +53,8 @@ export default class LanguageManipulator {
                 case 'about':
                     return [".navbar-link", "#navbar-download-link-content", ".about-main-page-title", "about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".pratnership-title", ".partner-text"];
                     break;
-            }
-        }
+            };
+        };
 
         static translateTo(lang, pageName, elementsToTranslate) {
             console.log(elementsToTranslate)
@@ -64,6 +72,6 @@ export default class LanguageManipulator {
                 counter++;
             });
         });
-    }
+    };
 
-}
+};
