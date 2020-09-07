@@ -18,6 +18,9 @@ function switchLang() {
 
 }
 
+let loc = window.location.href;
+console.log(loc)
+
 let classNameArray = ['first', 'second', 'third', 'fourth', 'fifth'];
 
 function addEvent() {

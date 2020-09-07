@@ -2,7 +2,7 @@
   "name": "loudplay",
   "version": "1.0.0",
   "description": "Landing Page for Loudplay",
-  "main": "index.html",
+  "main": "main.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
