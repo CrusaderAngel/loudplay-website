@@ -30,9 +30,6 @@ body {
   display: none;
 }
 
-.label_f2f {
-  display: none;
-}
 
 a {
   text-decoration: none;
@@ -105,6 +102,10 @@ a {
   padding-right: 2.5em;
 }
 
+.globalClass_9da {
+
+  display: none;
+}
 .label_f2f {
   display: none;
 }

@@ -45,8 +45,8 @@
 
     "about": {
         "ru":{
-            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
-            "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС"],
+            ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
+            "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС", "ИГРАТЬ СЕЙЧАС"],
             ".about-main-page-title": ["Мы в Loudplay<br />все заядлые геймеры"],
             ".about-main-page-text": ["Любим поиграть ночами после работы, и поэтому нам нравится представлять себя<br />героями игр с разными крутыми способностями"],
             ".radiant-title":["Ты всегда можешь положиться на <span>силы света,</span> надежных <br /> союзников в битве с врагами"],
@@ -60,14 +60,15 @@
         },
 
         "en":{
-            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE"],
-            "#navbar-download-link-content": ["PLAY NOW"],
+            ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
+            "#navbar-download-link-content": ["PLAY NOW", "PLAY NOW"],
             ".about-main-page-title":["We are ALL <br> real avid gamers in Loudplay"],
             ".about-main-page-text":["Love playing nights out after work, performing ourselves as heroes of games with different cool features."],
             ".radiant-title": ["Always rely on the forces of light, credible allies in the battle against enemies."],
             ".heroes-left-text": ["We're here to help you defeat any enemy wherever you are, just like Zeus.", "Drive your PC to a fantastic speed like Io.", "With us any game content begins to play with new colors, as in the hands of the master Rubick", "Bounty Hunter is eager to profit by your wealth and hide in the dark.","And if you decide to play in the evening, then meeting the Night Stalker will force you to book a place in the queue "],
             ".heroes-right-text": ["Our most important principle is to always be flexible and adapt to the situation, that’s what a competent Morphling can help you with.","We are ready to take the hit first as Bristleback so that our teammates can show their best qualities.", "The cunning Rikimaru is ready to hide you in the cloud at any time, stab you in the back and destroy your sense of security for the rest of the game.","Faceless Void will stop the Time - and the picture on your screen in the critical seconds of the battle...","And then the Venomancer will slow you down with constant poisonous spam."],
             ".dire-title":["But there are dark forces - the embodiment of fears and dangers, which we have to overcome together."],
+            ".process-title": ["Ay-ay-ay-ay-ay, what happened now!"],
             ".partnership-title":["OMG what just happened!"],
             ".partner-text":["... Russian Loudplay focuses on technology <br> development without building  <br>its own infrastructure ...", "...The delay is only 70 ms,<br> which is enough for most online<br> games including shooters ...", "... The 5G advantages ( of 5G)<br> were performed in Innopolis <br> on the the LoudPlay Gaming service - ...", "... a partnership with LoudPlay<br> will be an opportunity to access<br>  the mobile and desktop market ..."]
         }

@@ -7,9 +7,6 @@
   display: none !important;
 }
 
-.globalClass_9da {
-  display: none;
-}
 
 body {
   width: auto;
@@ -94,6 +91,10 @@ a {
 }
 
 .label_f2f {
+  display: none;
+}
+
+.globalClass_9da {
   display: none;
 }
 

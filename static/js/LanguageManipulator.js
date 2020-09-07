@@ -8,14 +8,6 @@ export default class LanguageManipulator {
             }
         };
 
-        static renderDefaultText() {
-            let currentLocation = window.location.href;
-            
-            if (currentLocation) {
-
-            }
-        };
-
         static getCurrentLanguage() {
             return localStorage.getItem('lang')
         };
@@ -51,23 +43,18 @@ export default class LanguageManipulator {
                     return [".navbar-link", "#download-header", "#download-subheader", ".download-option-element-text"];
                     break;
                 case 'about':
-                    return [".navbar-link", "#navbar-download-link-content", ".about-main-page-title", "about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".pratnership-title", ".partner-text"];
+                    return [".navbar-link", "#navbar-download-link-content", ".about-main-page-title", ".about-main-page-text", ".radiant-title", ".heroes-left-text", '.heroes-right-text', ".dire-title", ".process-title", ".partnership-title", ".partner-text"];
                     break;
             };
         };
 
         static translateTo(lang, pageName, elementsToTranslate) {
-            console.log(elementsToTranslate)
-
         elementsToTranslate.forEach(element => {
             let elementsArray = document.querySelectorAll(`${element}`);
-            console.log(elementsArray)
             let translationArray = langDB[pageName][lang][`${element}`];
-            console.log(translationArray)
             let counter = 0;
 
             elementsArray.forEach(item => {
-                console.log(item)
                 item.innerHTML = JSON.stringify(translationArray[counter]).replace(/"/g, '');
                 counter++;
             });
