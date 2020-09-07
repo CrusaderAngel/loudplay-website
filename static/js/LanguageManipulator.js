@@ -37,7 +37,7 @@ export default class LanguageManipulator {
 
         static getElementsToTranslate(pageName) {
             switch (pageName) {
-                case 'main':
+                case 'index':
                     return ['.navbar-link', '#navbar-download-link-content', "#navbar-download-link-content-mobile", "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".questions-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
                     break;
                 case 'technology':
