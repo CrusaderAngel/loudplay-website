@@ -4,6 +4,7 @@
         "ru": {
             ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
             "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС"],
+            "#navbar-download-link-content-mobile": ["ИГРАТЬ СЕЙЧАС"],
             "#main-header": ["ИГРОВОЙ КОМПЬЮТЕР<br>ДЛЯ ИЗБРАННЫХ"],
             ".logos-element-header": ["Являемся резидентами", "Работаем на технологии", "Доступно на"],
             ".page-content-subheader": ["С облачным геймингом<br>любую игру запустить сможешь ты!"],
@@ -24,6 +25,7 @@
         "en": {
             ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
             "#navbar-download-link-content": ["PLAY NOW"],
+            "#navbar-download-link-content-mobile": ["PLAY NOW"],
             "#main-header": ["GAMING PC<br>FOR CHOSEN"],
             ".logos-element-header": ["Skolkovo residents", "We work on", "Available for"],
             ".page-content-subheader": ["Like a hero in your favorite game<br>with a cloud gaming feel!"],
@@ -47,6 +49,7 @@
         "ru":{
             ".navbar-link": ["КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ", "КАК ЭТО РАБОТАЕТ", "КТО МЫ ТАКИЕ"],
             "#navbar-download-link-content": ["ИГРАТЬ СЕЙЧАС", "ИГРАТЬ СЕЙЧАС"],
+            "#navbar-download-link-content-mobile": ["ИГРАТЬ СЕЙЧАС"],
             ".about-main-page-title": ["Мы в Loudplay<br />все заядлые геймеры"],
             ".about-main-page-text": ["Любим поиграть ночами после работы, и поэтому нам нравится представлять себя<br />героями игр с разными крутыми способностями"],
             ".radiant-title":["Ты всегда можешь положиться на <span>силы света,</span> надежных <br /> союзников в битве с врагами"],
@@ -62,6 +65,7 @@
         "en":{
             ".navbar-link": ["HOW IT WORKS", "WHO WE ARE", "HOW IT WORKS", "WHO WE ARE"],
             "#navbar-download-link-content": ["PLAY NOW", "PLAY NOW"],
+            "#navbar-download-link-content-mobile": ["PLAY NOW"],
             ".about-main-page-title":["We are ALL <br> real avid gamers in Loudplay"],
             ".about-main-page-text":["Love playing nights out after work, performing ourselves as heroes of games with different cool features."],
             ".radiant-title": ["Always rely on the forces of light, credible allies in the battle against enemies."],

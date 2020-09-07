@@ -2,10 +2,14 @@ import langDB from './../lang/lang.json';
 
 export default class LanguageManipulator {
 
-        static setDefaultLanguage() {
-            if(!this.getCurrentLanguage()) {
-                localStorage.setItem('lang', 'ru')
-            }
+        static setDefaultLanguage() { //To set  add new language change this method. Don't forget to add all text to /static/lang/lang.json
+            if(!localStorage.getItem('lang')) {
+                if(navigator.language == 'ru-RU') {
+                    localStorage.setItem('lang', 'ru');
+                }else {
+                    localStorage.setItem('lang', 'en')
+                };
+            };
         };
 
         static getCurrentLanguage() {
@@ -34,7 +38,7 @@ export default class LanguageManipulator {
         static getElementsToTranslate(pageName) {
             switch (pageName) {
                 case 'main':
-                    return ['.navbar-link', '#navbar-download-link-content', "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".questions-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
+                    return ['.navbar-link', '#navbar-download-link-content', "#navbar-download-link-content-mobile", "#main-header", ".logos-element-header", ".page-content-subheader", "#page-content-header-left","#page-content-header-right",".page-content-subheader-left", ".page-content-subheader-right", "#download-link-content", ".skeleton-button-text", "#questions", ".question-text-desktop", ".questions-text-mobile", ".answer-text", "#illidan-speaks-header", "#footer-download-link-content"];
                     break;
                 case 'technology':
                     return [".navbar-link", "#navbar-download-link-content", "#page-1-rectangle-element-header", ".page-1-text-content", "#navbar-download-link-content-mobile", ".page-1-rectangle-element-text", ".page-container-text-header", ".page-container-text-paragraph", ".mobile-header", ".rectangle-text-mobile", ".rectangle-outside-text", ".page-2-header", ".mobile-page-bigpicture-header", ".mobile-bigpicture-text"];
