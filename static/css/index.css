@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+#globe:hover {
+  cursor: pointer;
+}
+
 .__jivoMobileButton {
   display: none !important;
 }
@@ -119,7 +123,7 @@ a {
   font-style: normal;
   font-weight: 600;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-  opacity: 0.4;
+  opacity: 1;
   color: #ffffff;
   font-size: 0.875em;
   line-height: 1.125em;
@@ -157,7 +161,7 @@ a {
       rgba(0, 15, 28, 0.73) 0.51%,
       rgba(0, 15, 28, 0) 31.56%
     ),
-    url('../../assets/pages/main/background/starwars.svg');
+    url('../../assets/pages/main/background/starwars.png');
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,7 +253,7 @@ a {
   width: fit-content;
   padding: 1.2em 4.6em;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-  opacity: 0.4;
+  opacity: 1;
   color: #ffffff;
   border-radius: 10px;
   font-family: 'Rubik', sans-serif;
@@ -264,7 +268,7 @@ a {
 
 #download-link-content:hover,
 #navbar-download-link-content:hover {
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 #download-link-content:active,
@@ -284,7 +288,7 @@ a {
   width: 100%;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
   border-radius: 12px;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .skeleton-button-inner {
@@ -301,7 +305,7 @@ a {
 }
 
 .skeleton-button:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .skeleton-button-text {
@@ -318,7 +322,7 @@ a {
 /****************************************************/
 
 #page-2 {
-  background: url('../../assets/pages/main/background/nfs.svg');
+  background: url('../../assets/pages/main/background/nfs.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,7 +362,7 @@ a {
 /****************************************************/
 
 #page-3 {
-  background: url('../../assets/pages/main/background/witcher.svg');
+  background: url('../../assets/pages/main/background/witcher.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -399,7 +403,7 @@ a {
 /****************************************************/
 
 #page-4 {
-  background: url('../../assets/pages/main/background/payday.svg');
+  background: url('../../assets/pages/main/background/payday.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,7 +411,7 @@ a {
 
 /****************************************************/
 #page-5 {
-  background: url('../../assets/pages/main/background/warthunder.svg');
+  background: url('../../assets/pages/main/background/warthunder.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -516,7 +520,7 @@ a {
 
 /****************************************************/
 #page-7 {
-  background: url('../../assets/pages/main/background/illidan.svg');
+  background: url('../../assets/pages/main/background/illidan.png');
   height: 120vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -570,7 +574,7 @@ a {
   font-style: normal;
   font-weight: bold;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-  opacity: 0.4;
+  opacity: 1;
   color: #ffffff;
   font-size: 0.875em;
   line-height: 1.125em;
@@ -580,7 +584,7 @@ a {
 }
 
 #footer-download-link-content:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 #footer-mobile {
@@ -623,7 +627,537 @@ footer {
   height: auto;
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 1922px) {
+  body {
+    font-size: 22.5px;
+  }
+  
+
+  footer {
+    top: 75%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
+
+  body {
+    font-size: 14px;
+  }
+  
+}
+
+/*Apple Stuff*/
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+
+  .pg-page {
+    height: 135vh;
+  }
+
+  #footer-mobile {
+    top: 30% !important;
+  }
+
+  #page-7 {
+    height: 100vh !important;
+  }
+
+}
+
+/*Nexus like tablets*/
+
+@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 800px) {
+
+  body {
+    font-size: calc(100vw / 22.5);
+  }
+
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 3.56em;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-burger {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 0em;
+  }
+
+  #loud-lion {
+    width: 6em;
+    height: auto;
+  }
+
+  #navbar-links {
+    padding-left: 1.5em;
+  }
+
+  .burger-cross {
+    padding-left: 0em;
+  }
+
+
+  #navbar-main-link {
+    margin-left: 1em;
+  }
+
+  .pg-page {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page-content {
+    padding-left: 0em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-content-left,
+  .page-content-right {
+    padding: 0em 1.25em;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #page-content-header-left,
+  #page-content-header-right {
+    padding-top: 9em;
+  }
+
+  .page-content-subheader-right,
+  .page-content-subheader-left {
+    font-size: 0.875em;
+  }
+
+  #download-link {
+    padding-top: 1.25em;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbar-download-link-mobile {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  #navbar-misc {
+    padding-right: 2em;
+  }
+
+  #navbar-download-link-content-mobile {
+    padding: 0.75em 1.5em;
+    margin-right: -1em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.75em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  #navbar-download-link-content-mobile:active {
+    opacity: 0.4;
+  }
+
+  #download-link-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 3.125em;
+    padding: 0.15em 1.4em;
+    text-align: center;
+  }
+
+  #page-5-br {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    flex-direction: column;
+    top: -10em;
+    height: auto;
+    width: 100%;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+    transition: 0.2s linear;
+  }
+
+  .navbar-link {
+    padding: 1.2em 0em;
+    text-align: center;
+  }
+
+  /***********************/
+
+  #page-1 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/starwars-mobile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw;
+  }
+
+  .main-header-container {
+    width: 20em;
+  }
+
+  .download-link-container,
+  .page-content-subheader-container {
+    width: 20em;
+  }
+
+  #main-header {
+    font-size: 2em;
+    margin-top: 3.5em;
+  }
+
+  s .page-content-subheader {
+    font-size: 0.875em;
+    width: 20em;
+  }
+
+  .skeleton-button {
+    width: 20em;
+    padding: 0.3% 0.25%;
+  }
+
+  .skeleton-button-inner {
+    width: 20em;
+    padding: 0em;
+  }
+
+  #logos {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .logos-element-left {
+    padding-left: 0em;
+  }
+
+  #logos-left {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logos-element-header {
+    font-size: 0.625em;
+  }
+
+  #logos-right {
+    display: none;
+  }
+
+  /*******************************/
+
+  #page-2 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/nfs-mobile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw;
+  }
+
+  #page-3 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/witcher-mobile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw;
+  }
+
+  #page-4 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/payday-mobile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw;
+  }
+
+  #page-5 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/warthunder-mobile.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw;
+  }
+
+  #page-7 {
+    background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
+      url('../../assets/pages/main/background_mobile/illidan-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /****************************************/
+  #questions {
+    padding-top: 2.5em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1em;
+    color: #ffffff;
+  }
+
+  .questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: auto;
+    margin-top: 2.5em;
+  }
+
+  .question-border {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    border-radius: 16px;
+  }
+
+  .question-inner {
+    margin: 0.3% 0.3%;
+    padding: 1em 2.3em;
+    width: 20em;
+    height: auto;
+    background: #000f1c;
+    border-radius: 16px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.2s linear;
+  }
+
+  .question-row,
+  .answer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .question-row::after {
+    display: none;
+  }
+
+  .answer-row {
+    display: none;
+    transition: 0.2s linear;
+  }
+
+  .question-text-desktop {
+    display: none;
+  }
+
+  .question-text-mobile {
+    display: block;
+    width: 20em;
+    padding: 2% 0%;
+    width: fit-content;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 1em;
+    color: #ffffff;
+  }
+
+  .answer-text {
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #a0b4cb;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    padding-right: 0em;
+  }
+
+  /********************************************/
+
+  #page-7 {
+    height: 100vh;
+  }
+
+  .illidan-speaks-inner {
+    margin-bottom: 2em;
+  }
+
+  .illidan-speaks {
+    background: url('/assets//misc/comic-bubble-mobile.svg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20em;
+    height: 12.7em;
+    position: relative;
+    top: 0em;
+    left: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    top: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .illidan-speaks-inner {
+    padding-top: 3em;
+  }
+
+  #illidan-speaks-header {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.5em;
+    color: #ffffff;
+    padding-bottom: 1em;
+  }
+
+  /**************************/
+
+  footer {
+    display: none;
+  }
+
+  #footer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top: 40%;
+  }
+
+  #footer-img {
+    width: auto;
+    height: 1.25em;
+  }
+
+  #footer-img-pilot {
+    padding-bottom: 0.3em;
+    width: auto;
+    height: 1.25em;
+  }
+
+  #footer-img-origin {
+    width: auto;
+    height: 1.25em;
+  }
+
+  .footer-link-row {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .pressed {
+    display: flex;
+    top: 3.6em;
+  }
+
+  .unpressed {
+    display: none;
+    transition: 4s linear;
+  }
+
+  #jivo,
+  #lang {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .jivo,
+  .lang {
+    display: none;
+  }
+  
+  #jivo{
+    padding-left: 2.8em;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 640px) and (max-width: 815px) {
+    #footer-img,
+    #footer-img-pilot,
+    #footer-img-origin {
+      width: 50%;
+    }
+
+    #footer-link {
+      padding-right: 0em;
+    }
+
+    #headset,
+    #globe {
+      width: 70%;
+      height: auto;
+    }
+
+   #loud-lion {
+     height: 3em;
+     width: auto;
+   }
+
+    #navbar-misc {
+      padding-right: 0em;
+    }
+
+    #lang {
+      padding-right: 0em;
+    }
+    
+    #logo-bottom {
+      width: 5em;
+      height: auto;
+    }
+
+    .play-button {
+      padding-right: 2em;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 420px) {
   /*General*/
 
   .inactive {
@@ -644,6 +1178,10 @@ footer {
 
   body {
     font-size: calc(100vw / 22.5);
+  }
+
+  .burger-cross {
+    padding-left: 1.1em;
   }
 
   .navbar {
@@ -730,7 +1268,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-    opacity: 0.4;
+    opacity: 1;
     color: #ffffff;
     font-size: 0.75em;
     line-height: 1.125em;
@@ -740,7 +1278,7 @@ footer {
   }
 
   #navbar-download-link-content-mobile:active {
-    opacity: 1;
+    opacity: 0.4;
   }
 
   #download-link-content {
@@ -1080,6 +1618,5 @@ footer {
   #jivo{
     padding-left: 2.8em;
   }
-
   
 }

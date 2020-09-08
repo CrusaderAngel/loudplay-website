@@ -2,10 +2,10 @@ import LanguageManipulator from './LanguageManipulator';
 import BurgerManipulator from './BurgerManipulator';
 
 
-window.addEventListener('load', LanguageManipulator.setDefaultLanguage);
-window.addEventListener('load', renderDefaultText);
+window.addEventListener('DOMContentLoaded', LanguageManipulator.setDefaultLanguage);
+window.addEventListener('DOMContentLoaded', renderDefaultText);
 document.querySelectorAll('#globe').forEach(item => item.addEventListener('click', switchLang));
-window.addEventListener('load', initGTM)
+window.addEventListener('DOMContentLoaded', initGTM)
 
 
 
@@ -41,16 +41,21 @@ function initGTM() {
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
-}
+    if(CURRENTLANGUAGE == 'en') {
+        document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
+    };
+};
 
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
     if (NEWLANG == 'en') {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe-en.svg')
         document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0.5em';
+        document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
     } else {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe.svg')
         document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0em'
+        document.getElementById('download-link-content').style.padding = '1.2em 4.6em';
     }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
 
@@ -83,7 +88,7 @@ if (PAGENAME != 'download') {
     document.querySelector('.burger-icon').addEventListener('click', BurgerManipulator.openMenu);
     document.querySelector('.burger-cross').addEventListener('click', BurgerManipulator.closeMenu);
 } else {
-    document.querySelector('.burger-cross').addEventListener('click', redirectBack);
+    document.querySelectorAll('#cross').forEach(item => item.addEventListener('click', redirectBack));
 }
 
 function redirectBack() {
