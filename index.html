@@ -2,350 +2,334 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/misc/loud-lion.svg">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Loudplay</title>
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/misc/loud-lion.svg">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Loudplay</title>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF');
+  </script>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="wrapper">
-        <div class="navbar">
-            <div id="navbar-links">
-                <a href="/index.html" id="navbar-main-link">
-                    <img src="/assets/logos/loudplay.svg" alt="">
-                </a>
-                <a href="/technology.html" class="navbar-link"></a>
-                <a href="/about.html" class="navbar-link"></a>
-            </div>
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+    <div class="navbar">
+      <div id="navbar-links">
+        <a href="/index.html" id="navbar-main-link">
+          <img src="/assets/logos/loudplay.svg" alt="">
+        </a>
+        <a href="/technology.html" class="navbar-link"></a>
+        <a href="/about.html" class="navbar-link"></a>
+      </div>
 
-            <div id="navbar-misc">
-                <div id="jivo">
-                    <a href="javascript:jivo_api.open()"><img src="/assets/misc/headset.svg" id="headset"></a>
-                </div>
-                <div id="lang">
-                    <img src="/assets/misc/globe.svg" id="globe">
-                </div>
-                <a class="play-button" class="play-button" href="/download.html" id="navbar-download-link">
-                    <div id="navbar-download-link-content">
-                    </div>
-                </a>
-            </div>
-
+      <div id="navbar-misc">
+        <div id="jivo">
+          <a href="javascript:jivo_api.open()"><img src="/assets/misc/headset.svg" id="headset"></a>
         </div>
-
-        <div class="navbar-mobile">
-            <div id="navbar-links">
-                <div class="burger">
-                    <img class="burger-icon" src="/assets/misc/burger.svg" alt="">
-                    <img class="burger-cross inactive" src="/assets/misc/burger-cross.svg" alt="">
-                </div>
-                <a href="/index.html" id="navbar-main-link">
-                    <img src="/assets/logos/loudplay.svg" alt="">
-                </a>
-            </div>
-
-            <div id="navbar-misc">
-                <a class="play-button" href="/download.html" id="navbar-download-link-mobile">
-                    <div id="navbar-download-link-content-mobile">
-                    </div>
-                </a>
-            </div>
-
-            <div class="menu-mobile unpressed">
-                <a href="/technology.html" class="navbar-link"></a>
-                <a href="/about.html" class="navbar-link"></a>
-            </div>
-
+        <div id="lang">
+          <img src="/assets/misc/globe.svg" id="globe">
         </div>
-        <div id="container">
-            <div data-anchor="Page 1" id="page-1" class="pg-page">
-                <div class="page-content">
-                    <div class="main-header-container">
-                        <h1 id="main-header"></h1>
-                    </div>
-                    <div class="page-content-subheader-container">
-                        <p class="page-content-subheader"><br>
-                        </p>
-                    </div>
-                    <div class="download-link-container">
-                        <a class="play-button" href="/download.html" id="download-link">
-                            <div id="download-link-content">
-                            </div>
-                        </a>
-                    </div>
-                    <a href="#page-6" class="skeleton-button-wrapper">
-                        <div class="skeleton-button">
-                            <div class="skeleton-button-inner">
-                                <p class="skeleton-button-text">
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <a class="play-button" class="play-button" href="/download.html" id="navbar-download-link">
+          <div id="navbar-download-link-content">
+          </div>
+        </a>
+      </div>
 
-                <div id="logos">
-                    <div id="logos-left">
-                        <div class="logos-element-left">
-                            <p class="logos-element-header"></p>
-                            <img src="/assets/logos/skolkovo.svg" alt="" srcset="">
-                        </div>
-                        <div class="logos-element-left">
-                            <p class="logos-element-header"></p>
-                            <img src="/assets/logos/nvidia.svg" alt="" srcset="">
-                        </div>
-                    </div>
-
-                    <div id="logos-right">
-                        <div class="logos-element-right">
-                            <p class="logos-element-header-empty"> </p>
-                            <img src="/assets/logos/windows.svg" alt="" srcset="">
-                        </div>
-                        <div class="logos-element-right">
-                            <p class="logos-element-header-empty"> </p>
-                            <img src="/assets/logos/mac.svg" alt="" srcset="">
-                        </div>
-                        <div class="logos-element-right">
-                            <p class="logos-element-header"></p>
-                            <img src="/assets/logos/android.svg" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-anchor="Page 2" id="page-2" class="pg-page">
-                <div class="page-content-left">
-                    <h2 id="page-content-header-left"></h2>
-                    <p class="page-content-subheader-left">
-                    <a class="play-button" href="/download.html" id="download-link">
-                        <div id="download-link-content">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div data-anchor="Page 3" id="page-3" class="pg-page">
-                <div class="page-content-right">
-                    <h2 id="page-content-header-right"></h2>
-                    <p class="page-content-subheader-right">
-                    </p>
-                    <a class="play-button" href="/download.html" id="download-link">
-                        <div id="download-link-content">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div data-anchor="Page 4" id="page-4" class="pg-page">
-                <div class="page-content-left">
-                    <h2 id="page-content-header-left"></h2>
-                    <p class="page-content-subheader-left">
-                    </p>
-                    <a class="play-button" href="/download.html" id="download-link">
-                        <div id="download-link-content">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div data-anchor="Page 5" id="page-5" class="pg-page">
-                <div class="page-content-right">
-                    <h2 id="page-content-header-right"></h2>
-                    <p class="page-content-subheader-right">
-                    </p>
-                    <a class="play-button" href="/download.html" id="download-link">
-                        <div id="download-link-content">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div data-anchor="Page 6" id="page-6" class="pg-page">
-                <h3 id="questions"></h3>
-                <div class="questions-wrapper">
-                    <div class="question-border">
-                        <div class="question-inner">
-                            <p class="question-text-desktop first">
-                            </p>
-                            <p class="question-text-mobile first">
-                            </p>
-                            <p class="answer-text inactive" id="first">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="question-border">
-                        <div class="question-inner">
-                            <p class="question-text-desktop second">
-                            </p>
-                            <p class="question-text-mobile second">
-                            </p>
-                            <p class="answer-text inactive" id="second">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="question-border">
-                        <div class="question-inner">
-                            <p class="question-text-desktop third">
-                            </p>
-                            <p class="question-text-mobile third">
-                            </p>
-                            <p class="answer-text inactive" id="third">
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="question-border">
-                        <div class="question-inner">
-                            <p class="question-text-desktop fourth">
-                            </p>
-                            <p class="question-text-mobile fourth">
-                            </p>
-                            <p class="answer-text inactive" id="fourth">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="question-border">
-                        <div class="question-inner">
-                            <p class="question-text-desktop fifth">
-                            </p>
-                            <p class="question-text-mobile fifth">
-                            </p>
-                            <p class="answer-text inactive" id="fifth">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div data-anchor="Page 7" id="page-7" class="pg-page">
-                <div class="illidan-speaks">
-                    <div class="illidan-speaks-inner">
-                        <h4 id="illidan-speaks-header">
-                        </h4>
-                        <a class="play-button" href="/download.html" id="footer-download-link">
-                            <div id="footer-download-link-content">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <footer>
-                    <div class="footer-link-row">
-                      <a id="footer-link"
-                        ><img id="footer-img" src="/assets/logos/steam.svg" alt=""
-                      /></a>
-                      <a id="footer-link"
-                        ><img id="footer-img" src="/assets/logos/uplay.svg" alt=""
-                      /></a>
-                      <a id="footer-link"
-                        ><img id="footer-img-origin" src="/assets/logos/origin.svg" alt=""
-                      /></a>
-                      <a id="footer-link">
-                        <img id="footer-img-origin" src="/assets/logos/blizzard.svg" alt=""
-                      /></a>
-                    </div>
-              
-                    <div class="footer-link-row">
-                      <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/discord.svg" alt=""
-                      /></a>
-                      <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/fb.svg" alt=""
-                      /></a>
-                      <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/youtube.svg" alt=""
-                      /></a>
-                      <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/twich.svg" alt=""
-                      /></a>
-                      <a href="https://vk.com/loudplay" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/vk.svg" alt=""
-                      /></a>
-                      <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/insta.svg" alt=""
-                      /></a>
-                    </div>
-              
-                    <div class="footer-link-row">
-                      <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/otzovik.svg" alt=""
-                      /></a>
-                      <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"
-                        ><img id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt=""
-                      /></a>
-                    </div>
-                  </footer>
-                  <!-- /Footer -->
-              
-                  <!-- Footer mobile -->
-                  <footer id="footer-mobile">
-                    <div class="footer-link-row">
-                      <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/otzovik.svg" alt=""
-                      /></a>
-                      <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"
-                        ><img id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt=""
-                      /></a>
-                    </div>
-              
-                    <div class="footer-link-row">
-                      <a class=".play-button" id="footer-link"
-                        ><img id="footer-img" src="/assets/logos/steam.svg" alt=""
-                      /></a>
-                      <a id="footer-link"
-                        ><img id="footer-img" src="/assets/logos/uplay.svg" alt=""
-                      /></a>
-                      <a id="footer-link"
-                        ><img id="footer-img-origin" src="/assets/logos/origin.svg" alt=""
-                      /></a>
-                      <a id="footer-link">
-                        <img id="footer-img-origin" src="/assets/logos/blizzard.svg" alt=""
-                      /></a>
-                    </div>
-              
-                    <div class="footer-link-row">
-                      <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/discord.svg" alt=""
-                      /></a>
-                      <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/fb.svg" alt=""
-                      /></a>
-                      <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/youtube.svg" alt=""
-                      /></a>
-                      <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/twich.svg" alt=""
-                      /></a>
-                      <a href="https://vk.com/loudplay" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/vk.svg" alt=""
-                      /></a>
-                      <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"
-                        ><img id="footer-img" src="/assets/logos/insta.svg" alt=""
-                      /></a>
-                    </div>
-                  </footer>
-            </div>
-        </div>
     </div>
 
-    <script src="/static/js/bundle.js"></script>
-    <script src="//code-ya.jivosite.com/widget/lQKrYWE5P8" async></script>
+    <div class="navbar-mobile">
+      <div id="navbar-links">
+        <div class="burger">
+          <img class="burger-icon" src="/assets/misc/burger.svg" alt="">
+          <img class="burger-cross inactive" src="/assets/misc/burger-cross.svg" alt="">
+        </div>
+        <a href="/index.html" id="navbar-main-link">
+          <img src="/assets/logos/loudplay.svg" alt="">
+        </a>
+      </div>
+
+      <div id="navbar-misc">
+        <div  class="jivo" id="jivo">
+          <a href="javascript:jivo_api.open()"><img src="/assets/misc/headset.svg" id="headset"></a>
+        </div>
+        <div class="lang"  id="lang">
+          <img src="/assets/misc/globe.svg" id="globe">
+        </div>
+        <a class="play-button" href="/download.html" id="navbar-download-link-mobile">
+          <div id="navbar-download-link-content-mobile">
+          </div>
+        </a>
+      </div>
+
+      <div class="menu-mobile unpressed">
+        <a href="/technology.html" class="navbar-link"></a>
+        <a href="/about.html" class="navbar-link"></a>
+      </div>
+
+    </div>
+    <div id="container">
+      <div data-anchor="Page 1" id="page-1" class="pg-page">
+        <div class="page-content">
+          <div class="main-header-container">
+            <h1 id="main-header"></h1>
+          </div>
+          <div class="page-content-subheader-container">
+            <p class="page-content-subheader"><br>
+            </p>
+          </div>
+          <div class="download-link-container">
+            <a class="play-button" href="/download.html" id="download-link">
+              <div id="download-link-content">
+              </div>
+            </a>
+          </div>
+          <a href="#page-6" class="skeleton-button-wrapper">
+            <div class="skeleton-button">
+              <div class="skeleton-button-inner">
+                <p class="skeleton-button-text">
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div id="logos">
+          <div id="logos-left">
+            <div class="logos-element-left">
+              <p class="logos-element-header"></p>
+              <img src="/assets/logos/skolkovo.svg" alt="" srcset="">
+            </div>
+            <div class="logos-element-left">
+              <p class="logos-element-header"></p>
+              <img src="/assets/logos/nvidia.svg" alt="" srcset="">
+            </div>
+          </div>
+
+          <div id="logos-right">
+            <div class="logos-element-right">
+              <p class="logos-element-header-empty"> </p>
+              <img src="/assets/logos/windows.svg" alt="" srcset="">
+            </div>
+            <div class="logos-element-right">
+              <p class="logos-element-header-empty"> </p>
+              <img src="/assets/logos/mac.svg" alt="" srcset="">
+            </div>
+            <div class="logos-element-right">
+              <p class="logos-element-header"></p>
+              <img src="/assets/logos/android.svg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="Page 2" id="page-2" class="pg-page">
+        <div class="page-content-left">
+          <h2 id="page-content-header-left"></h2>
+          <p class="page-content-subheader-left">
+            <a class="play-button" href="/download.html" id="download-link">
+              <div id="download-link-content">
+              </div>
+            </a>
+        </div>
+      </div>
+      <div data-anchor="Page 3" id="page-3" class="pg-page">
+        <div class="page-content-right">
+          <h2 id="page-content-header-right"></h2>
+          <p class="page-content-subheader-right">
+          </p>
+          <a class="play-button" href="/download.html" id="download-link">
+            <div id="download-link-content">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div data-anchor="Page 4" id="page-4" class="pg-page">
+        <div class="page-content-left">
+          <h2 id="page-content-header-left"></h2>
+          <p class="page-content-subheader-left">
+          </p>
+          <a class="play-button" href="/download.html" id="download-link">
+            <div id="download-link-content">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div data-anchor="Page 5" id="page-5" class="pg-page">
+        <div class="page-content-right">
+          <h2 id="page-content-header-right"></h2>
+          <p class="page-content-subheader-right">
+          </p>
+          <a class="play-button" href="/download.html" id="download-link">
+            <div id="download-link-content">
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div data-anchor="Page 6" id="page-6" class="pg-page">
+        <h3 id="questions"></h3>
+        <div class="questions-wrapper">
+          <div class="question-border">
+            <div class="question-inner">
+              <p class="question-text-desktop first">
+              </p>
+              <p class="question-text-mobile first">
+              </p>
+              <p class="answer-text inactive" id="first">
+              </p>
+            </div>
+          </div>
+          <div class="question-border">
+            <div class="question-inner">
+              <p class="question-text-desktop second">
+              </p>
+              <p class="question-text-mobile second">
+              </p>
+              <p class="answer-text inactive" id="second">
+              </p>
+            </div>
+          </div>
+          <div class="question-border">
+            <div class="question-inner">
+              <p class="question-text-desktop third">
+              </p>
+              <p class="question-text-mobile third">
+              </p>
+              <p class="answer-text inactive" id="third">
+
+              </p>
+            </div>
+          </div>
+          <div class="question-border">
+            <div class="question-inner">
+              <p class="question-text-desktop fourth">
+              </p>
+              <p class="question-text-mobile fourth">
+              </p>
+              <p class="answer-text inactive" id="fourth">
+              </p>
+            </div>
+          </div>
+          <div class="question-border">
+            <div class="question-inner">
+              <p class="question-text-desktop fifth">
+              </p>
+              <p class="question-text-mobile fifth">
+              </p>
+              <p class="answer-text inactive" id="fifth">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-anchor="Page 7" id="page-7" class="pg-page">
+        <div class="illidan-speaks">
+          <div class="illidan-speaks-inner">
+            <h4 id="illidan-speaks-header">
+            </h4>
+            <a class="play-button" href="/download.html" id="footer-download-link">
+              <div id="footer-download-link-content">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footer-link-row">
+            <a id="footer-link"><img id="footer-img" src="/assets/logos/steam.svg" alt="" /></a>
+            <a id="footer-link"><img id="footer-img" src="/assets/logos/uplay.svg" alt="" /></a>
+            <a id="footer-link"><img id="footer-img-origin" src="/assets/logos/origin.svg" alt="" /></a>
+            <a id="footer-link">
+              <img id="footer-img-origin" src="/assets/logos/blizzard.svg" alt="" /></a>
+          </div>
+
+          <div class="footer-link-row">
+            <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/discord.svg" alt="" /></a>
+            <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/fb.svg" alt="" /></a>
+            <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"><img
+                id="footer-img" src="/assets/logos/youtube.svg" alt="" /></a>
+            <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/twich.svg" alt="" /></a>
+            <a href="https://vk.com/loudplay" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/vk.svg" alt="" /></a>
+            <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/insta.svg" alt="" /></a>
+          </div>
+
+          <div class="footer-link-row">
+            <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link"
+              target="_blank"><img id="footer-img" src="/assets/logos/otzovik.svg" alt="" /></a>
+            <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"><img
+                id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt="" /></a>
+          </div>
+        </footer>
+        <!-- /Footer -->
+
+        <!-- Footer mobile -->
+        <footer id="footer-mobile">
+          <div class="footer-link-row">
+            <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link"
+              target="_blank"><img id="footer-img" src="/assets/logos/otzovik.svg" alt="" /></a>
+            <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"><img
+                id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt="" /></a>
+          </div>
+
+          <div class="footer-link-row">
+            <a class=".play-button" id="footer-link"><img id="footer-img" src="/assets/logos/steam.svg" alt="" /></a>
+            <a id="footer-link"><img id="footer-img" src="/assets/logos/uplay.svg" alt="" /></a>
+            <a id="footer-link"><img id="footer-img-origin" src="/assets/logos/origin.svg" alt="" /></a>
+            <a id="footer-link">
+              <img id="footer-img-origin" src="/assets/logos/blizzard.svg" alt="" /></a>
+          </div>
+
+          <div class="footer-link-row">
+            <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/discord.svg" alt="" /></a>
+            <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/fb.svg" alt="" /></a>
+            <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"><img
+                id="footer-img" src="/assets/logos/youtube.svg" alt="" /></a>
+            <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/twich.svg" alt="" /></a>
+            <a href="https://vk.com/loudplay" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/vk.svg" alt="" /></a>
+            <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"><img id="footer-img"
+                src="/assets/logos/insta.svg" alt="" /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/bundle.js"></script>
+  <script src="//code-ya.jivosite.com/widget/lQKrYWE5P8" async></script>
 </body>
 
 </html>

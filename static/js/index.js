@@ -46,9 +46,11 @@ function renderDefaultText() {
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
     if (NEWLANG == 'en') {
-        document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
+        document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe-en.svg')
+        document.querySelector('#navbar-download-link-mobile').style ='margin-left: 0.5em';
     } else {
-        document.querySelector('#globe').src = '/assets/misc/globe.svg'
+        document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe.svg')
+        document.querySelector('#navbar-download-link-mobile').style ='margin-left: 0em'
     }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
 
@@ -75,3 +77,4 @@ function openAnswer() {
         }
     });
 };
+

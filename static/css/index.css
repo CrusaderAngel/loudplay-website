@@ -1069,9 +1069,17 @@ footer {
   #jivo,
   #lang {
     padding-right: 1em;
+    padding-left: 1em;
   }
 
-  /* #navbar-download-link-content-mobile {
-     display: none !important;
-  } */
+  .jivo,
+  .lang {
+    display: none;
+  }
+  
+  #jivo{
+    padding-left: 2.8em;
+  }
+
+  
 }
