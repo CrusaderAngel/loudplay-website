@@ -260,6 +260,10 @@ img {
   top: 3.66em;
 }
 
+.burger-cross{
+  padding-bottom: 0.2em;
+}
+
 @media (min-width: 320px) and (max-width: 420px) {
   .inactive {
     display: none;

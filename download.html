@@ -11,22 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF');
+    </script>
     <title>Loudplay</title>
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="navbar">
         <div id="navbar-links">
             <a href="/index.html" id="navbar-main-link">
@@ -43,34 +51,28 @@
             <div id="lang">
                 <img src="/assets/misc/globe.svg" id="globe">
             </div>
+            <img class="burger-cross" id="cross" src="/assets/misc/burger-cross.svg" alt="" />
         </div>
 
     </div>
 
     <div class="navbar-mobile">
         <div id="navbar-links">
-          <div class="burger">
-            <img class="burger-icon" id="burger" src="/assets/misc/burger.svg" alt="" />
-            <img
-              class="burger-cross inactive"
-               id="cross"
-              src="/assets/misc/burger-cross.svg"
-              alt=""
-            />
-          </div>
-          <a href="/index.html" id="navbar-main-link">
-            <img src="/assets/logos/loudplay.svg" alt="" />
-          </a>
+            <div class="burger">
+                <img class="burger-icon" id="burger" src="/assets/misc/burger.svg" alt="" />
+                <img class="burger-cross inactive" id="cross" src="/assets/misc/burger-cross.svg" alt="" />
+            </div>
+            <a href="/index.html" id="navbar-main-link">
+                <img src="/assets/logos/loudplay.svg" alt="" />
+            </a>
         </div>
 
 
         <div class="menu-mobile unpressed">
-          <a href="/technology.html" class="navbar-link"
-            ></a
-          >
-          <a href="/about.html" class="navbar-link"></a>
+            <a href="/technology.html" class="navbar-link"></a>
+            <a href="/about.html" class="navbar-link"></a>
         </div>
-      </div>
+    </div>
     </div>
     </div>
 
