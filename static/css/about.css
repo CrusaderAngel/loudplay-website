@@ -385,10 +385,10 @@ a {
 }
 
 .process-container {
-  width: 90.2em;
+  width: 92%;
   height: auto;
 
-  margin-left: 7.5em;
+  margin-left: 8%;
   margin-bottom: 6.88em;
 }
 
@@ -442,13 +442,13 @@ a {
 }
 
 .swiper-items {
-  width: 84.5em;
+  width: 90%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
 
-  margin-left: -6em;
+  margin-left: -8%;
 }
 
 .swiper-button-prev::after,
@@ -495,7 +495,7 @@ a {
 
 .swiper-scrollbar {
   height: 0.2em;
-  width: 75em;
+  width: 90%;
   background-color: #102938 !important;
 
   cursor: grab;
@@ -663,7 +663,6 @@ footer {
     position: fixed;
     width: 100%;
     top: 0px;
-    z-index: 9999 !important;
     height: 3.56em;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
@@ -984,13 +983,12 @@ footer {
   .swiper-container {
     width: 100%;
     height: auto;
-    z-index: 1 !important;
+
     margin-bottom: 3em;
   }
 
   .swiper-wrapper {
     gap: 0em;
-    z-index: 1 !important;
   }
 
   .swiper-slide {
@@ -999,7 +997,7 @@ footer {
 
   .swiper-image-mobile {
     display: inline;
-    z-index: 1 !important;
+
     width: 11.25em;
     height: 10.63em;
   }
@@ -1010,7 +1008,6 @@ footer {
     height: 1.5em;
     top: 4.5em;
     right: 0.7em;
-    z-index: 1 !important;
   }
 
   .swiper-items {
@@ -1020,14 +1017,12 @@ footer {
     justify-content: space-between;
     align-items: space-between;
     margin: 0 auto 5em;
-    z-index: 1 !important;
   }
 
   .swiper-scrollbar {
     height: 0.2em;
     width: 13.5em;
     background-color: #102938 !important;
-    z-index: 1 !important;
   }
 
   /* Partnership Mobile
