@@ -7,17 +7,35 @@ window.addEventListener('load', renderDefaultText);
 document.querySelectorAll('#globe').forEach(item => item.addEventListener('click', switchLang));
 document.querySelector('.burger-icon').addEventListener('click', BurgerManipulator.openMenu);
 document.querySelector('.burger-cross').addEventListener('click', BurgerManipulator.closeMenu);
+window.addEventListener('load', initGTM)
 
 
 const CURRENTLANGUAGE = LanguageManipulator.getCurrentLanguage();
 const PAGENAME = LanguageManipulator.getPagename();
 const ELEMENTS = LanguageManipulator.getElementsToTranslate(PAGENAME);
 
-if(CURRENTLANGUAGE == 'en') {
+if (CURRENTLANGUAGE == 'en') {
     document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
-}else{
+} else {
     document.querySelector('#globe').src = '/assets/misc/globe.svg'
 }
+
+function initGTM() {
+    window.dataLayer = [];
+    if(PAGENAME != 'download') {
+        document.querySelectorAll('.play-button').forEach(function (el) {
+            el.onclick = function () {
+              window.dataLayer.push({ event: 'ClickCTA' });
+            }});
+    } else {
+        document.querySelectorAll('.play-button').forEach(function (el) {
+            el.onclick = function () {
+              window.dataLayer.push({ event: 'Download_Launcher' });
+            };
+          });
+    };
+};
+
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
@@ -25,9 +43,9 @@ function renderDefaultText() {
 
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
-    if(NEWLANG == 'en') {
+    if (NEWLANG == 'en') {
         document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
-    }else{
+    } else {
         document.querySelector('#globe').src = '/assets/misc/globe.svg'
     }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
