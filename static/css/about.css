@@ -442,13 +442,13 @@ a {
 }
 
 .swiper-items {
-  width: 90%;
+  width: 87%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
 
-  margin-left: -8%;
+  margin-left: -12.9%;
 }
 
 .swiper-button-prev::after,
