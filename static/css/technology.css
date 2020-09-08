@@ -728,6 +728,21 @@ footer {
     display: none;
     transition: 4s linear;
   }
+
+  #jivo,
+  #lang {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .jivo,
+  .lang {
+    display: none;
+  }
+
+  #jivo {
+    padding-left: 2.8em;
+  }
 }
 
 .overlay_79a {

@@ -19,21 +19,34 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <title>About</title>
-    <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF');</script>
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-5MX7NLF')
+    </script>
   </head>
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navbar -->
     <div class="navbar">
       <div id="navbar-links">
@@ -77,7 +90,19 @@
       </div>
 
       <div id="navbar-misc">
-        <a class="play-button" href="/download.html" id="navbar-download-link-mobile">
+        <div class="jivo" id="jivo">
+          <a href="javascript:jivo_api.open()"
+            ><img src="/assets/misc/headset.svg" id="headset"
+          /></a>
+        </div>
+        <div class="lang" id="lang">
+          <img src="/assets/misc/globe.svg" id="globe" />
+        </div>
+        <a
+          class="play-button"
+          href="/download.html"
+          id="navbar-download-link-mobile"
+        >
           <div id="navbar-download-link-content-mobile"></div>
         </a>
       </div>
@@ -91,18 +116,15 @@
     <!-- About -->
     <div class="about-main-page">
       <div class="about-container">
-        <h1 class="about-main-page-title">
-        </h1>
-        <p class="about-main-page-text">
-        </p>
+        <h1 class="about-main-page-title"></h1>
+        <p class="about-main-page-text"></p>
       </div>
     </div>
 
     <!-- Radiant -->
 
     <div class="radiant-container">
-      <h3 class="radiant-title">
-      </h3>
+      <h3 class="radiant-title"></h3>
 
       <div class="radiant-flex">
         <div class="heroes-left">
@@ -112,8 +134,7 @@
             src="/assets/pages/about/about-radiant/zeus.svg"
             alt=""
           />
-          <p id="zeus-text" class="heroes-left-text">
-          </p>
+          <p id="zeus-text" class="heroes-left-text"></p>
         </div>
 
         <div class="heroes-right">
@@ -122,8 +143,7 @@
             src="/assets/pages/about/about-radiant/morphling.svg"
             alt=""
           />
-          <p class="heroes-right-text" id="morphling-text">
-          </p>
+          <p class="heroes-right-text" id="morphling-text"></p>
         </div>
 
         <div class="heroes-left">
@@ -132,8 +152,7 @@
             src="/assets/pages/about/about-radiant/io.svg"
             alt=""
           />
-          <p class="heroes-left-text">
-          </p>
+          <p class="heroes-left-text"></p>
         </div>
 
         <div class="heroes-right">
@@ -142,8 +161,7 @@
             src="/assets/pages/about/about-radiant/bristleback.svg"
             alt=""
           />
-          <p class="heroes-right-text" id="bristle-text">
-          </p>
+          <p class="heroes-right-text" id="bristle-text"></p>
         </div>
 
         <div class="heroes-left">
@@ -152,8 +170,7 @@
             src="/assets/pages/about/about-radiant/rubick.svg"
             alt=""
           />
-          <p class="heroes-left-text" id="rubick-text">
-          </p>
+          <p class="heroes-left-text" id="rubick-text"></p>
         </div>
       </div>
     </div>
@@ -161,8 +178,7 @@
 
     <!-- Dire -->
     <div class="dire-container">
-      <h3 class="dire-title">
-      </h3>
+      <h3 class="dire-title"></h3>
 
       <div class="dire-flex">
         <div class="heroes-right">
@@ -171,8 +187,7 @@
             src="/assets/pages/about/about-dire/rikimaru.svg"
             alt=""
           />
-          <p class="heroes-right-text" id="riki-text">
-          </p>
+          <p class="heroes-right-text" id="riki-text"></p>
         </div>
 
         <div class="heroes-left">
@@ -181,8 +196,7 @@
             src="/assets/pages/about/about-dire/bounty_hunter.svg"
             alt=""
           />
-          <p class="heroes-left-text">
-          </p>
+          <p class="heroes-left-text"></p>
         </div>
 
         <div class="heroes-right">
@@ -191,8 +205,7 @@
             src="/assets/pages/about/about-dire/void.svg"
             alt=""
           />
-          <p class="heroes-right-text" id="void-text">
-          </p>
+          <p class="heroes-right-text" id="void-text"></p>
         </div>
 
         <div class="heroes-left">
@@ -201,8 +214,7 @@
             src="/assets/pages/about/about-dire/balanar.svg"
             alt=""
           />
-          <p class="heroes-left-text" id="balanar-text">
-          </p>
+          <p class="heroes-left-text" id="balanar-text"></p>
         </div>
 
         <div class="heroes-right">
@@ -211,8 +223,7 @@
             src="/assets/pages/about/about-dire/venomancer.svg"
             alt=""
           />
-          <p class="heroes-right-text" id="venomancer-text">
-          </p>
+          <p class="heroes-right-text" id="venomancer-text"></p>
         </div>
       </div>
     </div>
@@ -356,12 +367,10 @@
 
     <!-- Partnership -->
     <div class="partnership-container">
-      <div class="partnership-title">
-      </div>
+      <div class="partnership-title"></div>
       <div class="partnership-elements">
         <div class="partner-elem">
-          <p class="partner-text">
-          </p>
+          <p class="partner-text"></p>
           <img
             class="forbes-pic"
             src="/assets/pages/about/others-desktop/forbes.svg"
@@ -370,8 +379,7 @@
         </div>
 
         <div class="partner-elem">
-          <p class="partner-text">
-          </p>
+          <p class="partner-text"></p>
           <img
             class="telecom-pic"
             src="/assets/pages/about/others-desktop/telecom.svg"
@@ -380,8 +388,7 @@
         </div>
 
         <div class="partner-elem">
-          <p class="partner-text">
-          </p>
+          <p class="partner-text"></p>
           <img
             class="rostelecom-pic"
             src="/assets/pages/about/others-desktop/rostelecom.svg"
@@ -390,8 +397,7 @@
         </div>
 
         <div class="partner-elem">
-          <p class="partner-text">
-          </p>
+          <p class="partner-text"></p>
           <img
             class="kommersant-pic"
             src="/assets/pages/about/others-desktop/kommersant.svg"
@@ -423,28 +429,46 @@
         <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"
           ><img id="footer-img" src="/assets/logos/discord.svg" alt=""
         /></a>
-        <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"
+        <a
+          href="https://www.facebook.com/loudplayru/"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/fb.svg" alt=""
         /></a>
-        <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"
+        <a
+          href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/youtube.svg" alt=""
         /></a>
-        <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"
+        <a
+          href="https://www.twitch.tv/loudplay_ru"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/twich.svg" alt=""
         /></a>
         <a href="https://vk.com/loudplay" id="footer-link" target="_blank"
           ><img id="footer-img" src="/assets/logos/vk.svg" alt=""
         /></a>
-        <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"
+        <a
+          href="https://www.instagram.com/loudplayru/"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/insta.svg" alt=""
         /></a>
       </div>
 
       <div class="footer-link-row">
-        <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link" target="_blank"
+        <a
+          href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/otzovik.svg" alt=""
         /></a>
-        <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"
+        <a
+          href="https://ru.trustpilot.com/review/www.loudplay.ru"
+          id="footer-link-trust"
+          target="_blank"
           ><img id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt=""
         /></a>
       </div>
@@ -454,10 +478,16 @@
     <!-- Footer mobile -->
     <footer id="footer-mobile">
       <div class="footer-link-row">
-        <a href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5" id="footer-link" target="_blank"
+        <a
+          href="https://otzovik.com/reviews/loudplay-moschniy_kompyuter_v_oblake/?ratio=5"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/otzovik.svg" alt=""
         /></a>
-        <a href="https://ru.trustpilot.com/review/www.loudplay.ru" id="footer-link-trust" target="_blank"
+        <a
+          href="https://ru.trustpilot.com/review/www.loudplay.ru"
+          id="footer-link-trust"
+          target="_blank"
           ><img id="footer-img-pilot" src="/assets/logos/trustpilot.svg" alt=""
         /></a>
       </div>
@@ -481,19 +511,31 @@
         <a href="https://discord.gg/ZSmrWVQ" id="footer-link" target="_blank"
           ><img id="footer-img" src="/assets/logos/discord.svg" alt=""
         /></a>
-        <a href="https://www.facebook.com/loudplayru/" id="footer-link" target="_blank"
+        <a
+          href="https://www.facebook.com/loudplayru/"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/fb.svg" alt=""
         /></a>
-        <a href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ" id="footer-link" target="_blank"
+        <a
+          href="https://www.youtube.com/channel/UCzH9rfi0AO86SMYxitWsvwQ"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/youtube.svg" alt=""
         /></a>
-        <a href="https://www.twitch.tv/loudplay_ru" id="footer-link" target="_blank"
+        <a
+          href="https://www.twitch.tv/loudplay_ru"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/twich.svg" alt=""
         /></a>
         <a href="https://vk.com/loudplay" id="footer-link" target="_blank"
           ><img id="footer-img" src="/assets/logos/vk.svg" alt=""
         /></a>
-        <a href="https://www.instagram.com/loudplayru/" id="footer-link" target="_blank"
+        <a
+          href="https://www.instagram.com/loudplayru/"
+          id="footer-link"
+          target="_blank"
           ><img id="footer-img" src="/assets/logos/insta.svg" alt=""
         /></a>
       </div>
