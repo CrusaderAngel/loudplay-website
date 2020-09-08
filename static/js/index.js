@@ -20,6 +20,8 @@ if (CURRENTLANGUAGE == 'en') {
     document.querySelector('#globe').src = '/assets/misc/globe.svg'
 }
 
+//GTM Initialization
+
 function initGTM() {
     window.dataLayer = [];
     if(PAGENAME != 'download') {
