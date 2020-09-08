@@ -450,7 +450,11 @@ img {
     transition: 4s linear;
   }
 
-  .buger-icon {
-    display: none;
+  #burger {
+    display: none !important;
+  }
+
+  #cross {
+    display: inline !important;
   }
 }
