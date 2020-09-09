@@ -650,7 +650,7 @@ footer {
   
 }
 
-/*Ipad Pro*/
+/*Ipad Pro Landscape*/
 
 @media only screen and (orientation: landscape) and (min-width: 1366px) and (min-height: 1024px)  {
 
@@ -1141,7 +1141,7 @@ footer {
 
 /*Nexus like tablets*/
 
-@media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 800px) {
 
   #logos-left {
     padding-top: 1em;
