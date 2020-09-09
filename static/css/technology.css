@@ -459,7 +459,28 @@ footer {
 
 /*Nexus like tablets*/
 
-@media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 800px) {
+@media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 1024px) {
+  
+  #loud-lion {
+    height: 2.5em;
+    width: auto;
+  }
+
+  .burger-icon {
+    width: 1em;
+  }
+
+  .burger-cross {
+    width: 1em;
+  }
+
+  #headset {
+    width: 1em;
+  }
+  #globe{
+    width: 2em;
+  }
+  
   body {
     font-size: calc(100vw / 22.5);
     background: #051621;
