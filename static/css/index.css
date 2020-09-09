@@ -1143,6 +1143,10 @@ footer {
 
 @media only screen and (orientation: portrait) and (min-width: 600px) and (max-width: 800px) {
 
+  #logos-left {
+    padding-top: 1em;
+  }
+
   body {
     font-size: calc(100vw / 22.5);
   }
