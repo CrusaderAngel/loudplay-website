@@ -9,6 +9,25 @@
   padding: 0px;
 }
 
+#navbar-download-link-content-mobile {
+  opacity: 1 !important;
+}
+
+
+#navbar-download-link-content {
+  opacity: 1 !important;
+}
+
+#navbar-download-link-content-mobile:hover,
+#navbar-download-link-content:hover {
+  opacity: 0.4 !important;
+}
+
+#globe:hover{
+  cursor: pointer !important;
+}
+
+
 .__jivoMobileButton {
   display: none !important;
 }

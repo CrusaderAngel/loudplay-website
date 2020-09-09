@@ -41,7 +41,7 @@ function initGTM() {
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
-    if(CURRENTLANGUAGE == 'en' && screen.width > screen.height) {
+    if(CURRENTLANGUAGE == 'en' && screen.width > screen.height && PAGENAME == '/') {
         document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
     };
 };
@@ -51,14 +51,14 @@ function switchLang() {
     if (NEWLANG == 'en') {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe-en.svg')
         document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0.5em';
-        if(screen.width > screen.height) {
+        if(screen.width > screen.height && PAGENAME == '/') {
             document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
         };
     } else {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe.svg')
         document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0em'
-        if(screen.width < screen.height) {
-            document.getElementById('download-link-content').style.padding = '1.2em 4.6em';
+        if(screen.width < screen.height && PAGENAME == '/') {
+            document.getElementById('download-link-content').style.padding = '1.2em 4.6em !important';
         };
     }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
