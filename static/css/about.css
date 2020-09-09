@@ -13,7 +13,6 @@
   opacity: 1 !important;
 }
 
-
 #navbar-download-link-content {
   opacity: 1 !important;
 }
@@ -23,10 +22,9 @@
   opacity: 0.4 !important;
 }
 
-#globe:hover{
+#globe:hover {
   cursor: pointer !important;
 }
-
 
 .__jivoMobileButton {
   display: none !important;
@@ -78,12 +76,14 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   top: 0em;
   width: 100%;
   height: 5em;
   background: rgba(5, 22, 33, 0.7);
   backdrop-filter: blur(16px);
+
+  z-index: 999 !important;
 }
 
 a {
@@ -645,13 +645,626 @@ footer {
   height: auto;
 }
 
+/* High res displays 
+ --------------------------------------------------------------------------------------------------*/
+@media (min-width: 1922px) {
+  body {
+    font-size: 22.5px;
+  }
+}
 
+@media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
+  body {
+    font-size: 14px;
+  }
+}
 
+/*Ipad Pro
+----------------------------------------------------------------------------------------------------------------*/
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (min-device-height: 1366px) {
+  body {
+    font-size: calc(100vw / 22.5);
+  }
 
+  .inactive {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .unpressed {
+    display: flex;
+  }
+
+  .pressed {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* Navbar Ipad Pro
+-------------------------------------------------------------------------------------------------------------------------*/
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+    height: 3.56em;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+
+    z-index: 999 !important;
+  }
+
+  .mobile-burger {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-left: 0em;
+  }
+  .burger-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .burger-cross {
+    width: 1em;
+    height: 1em;
+  }
+
+  #navbar-links {
+    padding-left: 0em;
+    margin-left: 1.1em;
+  }
+
+  #navbar-main-link {
+    margin-left: 1em;
+  }
+  #logo-lion {
+    widows: 2em;
+    height: 2em;
+  }
+
+  #navbar-download-link-mobile {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  #navbar-misc {
+    padding-right: 0em;
+    margin-right: 1.1em;
+  }
+
+  #navbar-download-link-content-mobile {
+    padding: 0.75em 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 0.4;
+    color: #ffffff;
+    font-size: 0.55em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  #navbar-download-link-content-mobile:active {
+    opacity: 1;
+  }
+
+  #headset {
+    width: 1em;
+    height: 1em;
+  }
+
+  #globe {
+    width: 2em;
+    height: 2em;
+  }
+  #lang {
+    padding: 0 !important;
+  }
+
+  #download-link-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 3.125em;
+    padding: 0.15em 1.4em;
+    text-align: center;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    flex-direction: column;
+    top: -10em;
+    height: auto;
+    width: 100%;
+    background: rgba(5, 22, 33, 0.7);
+    backdrop-filter: blur(16px);
+    transition: 0.2s linear;
+  }
+
+  .navbar-link {
+    padding: 1.2em 0em;
+    text-align: center;
+  }
+
+  /* About Ipad pro
+----------------------------------------------------------------------------------*/
+  .about-main-page {
+    display: block;
+    background: url(/assets/pages/about/mobile/about-main-mobile.svg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 0;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2.5em;
+
+    padding-top: 22em;
+    width: 20em;
+  }
+
+  .about-main-page-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1.25em;
+
+    margin-bottom: 0.8em;
+    padding-bottom: 0;
+
+    color: white;
+  }
+
+  .about-main-page-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.71em;
+
+    color: white;
+  }
+
+  /* Heroes pic + text (radiant and dire) Ipad pro
+----------------------------------------------------------------------------------*/
+  .heroes-left {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 22.5em;
+    height: 10em;
+
+    margin-bottom: 0;
+  }
+
+  .heroes-pic-left {
+    position: static;
+    top: 0;
+    left: 0;
+
+    width: 9.61em;
+    height: 15.75em;
+    margin-left: 0;
+  }
+
+  .heroes-left-text {
+    position: static;
+    left: 0;
+    bottom: 0;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.43em;
+
+    color: #ffffff;
+  }
+
+  .heroes-right {
+    position: static;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    width: 22.5em;
+    height: 10em;
+
+    margin-bottom: 0;
+  }
+
+  .heroes-pic-right {
+    position: static;
+    top: 0;
+    left: 0;
+
+    width: 9.61em;
+    height: 15.75em;
+    margin-right: 0;
+  }
+
+  .heroes-right-text {
+    position: static;
+    left: 0;
+    bottom: 0;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88em;
+    line-height: 1.43em;
+
+    color: #ffffff;
+  }
+
+  /* Radiant Ipad pro
+----------------------------------------------------------------------------------*/
+
+  .radiant-container {
+    background: linear-gradient(
+        180deg,
+        rgba(5, 22, 33, 0) 33.08%,
+        rgba(5, 22, 33, 0.38) 69.97%,
+        #051621 94.67%
+      ),
+      url(/assets/pages/about/mobile/radiant-bg-mobile.svg);
+    width: 100vw;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  .radiant-title {
+    width: 16em;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    color: #ffffff;
+
+    padding-top: 2em;
+    margin: 0 auto 2.5em;
+  }
+
+  .radiant-title br {
+    display: none;
+  }
+
+  .radiant-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #morphling-text br {
+    display: none;
+  }
+
+  #bristle-text br {
+    display: none;
+  }
+
+  /* Dire Ipad pro
+----------------------------------------------------------------------------------*/
+
+  .dire-container {
+    background: linear-gradient(
+        180deg,
+        rgba(5, 22, 33, 0) 33.08%,
+        rgba(5, 22, 33, 0.38) 69.97%,
+        #051621 94.67%
+      ),
+      url(/assets/pages/about/mobile/dire-bg-mobile.svg);
+    width: 100%;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 5em;
+  }
+
+  .dire-title {
+    width: 16em;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    color: #ffffff;
+
+    padding-top: 2.5em;
+    margin: 0 auto 2.5em;
+  }
+
+  .dire-title br {
+    display: none;
+  }
+
+  .dire-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #riki-text br {
+    display: none;
+  }
+
+  /* Process Ipad pro
+----------------------------------------------------------------------------------*/
+  .swiper-image {
+    display: none;
+  }
+
+  .process-container {
+    width: 20em;
+    height: auto;
+
+    margin: 0 auto 2.5em;
+  }
+
+  .process-title {
+    width: auto;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    margin-bottom: 2.4em;
+
+    color: #ffffff;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 3em;
+  }
+
+  .swiper-wrapper {
+    gap: 0em;
+  }
+
+  .swiper-slide {
+    width: 14em !important;
+  }
+
+  .swiper-image-mobile {
+    display: inline;
+
+    width: 11.25em;
+    height: 10.63em;
+  }
+
+  .swiper-points-img {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    top: 4.5em;
+    right: 0.7em;
+  }
+
+  .swiper-items {
+    width: 20em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 0 auto 5em;
+  }
+
+  .swiper-scrollbar {
+    height: 0.2em;
+    width: 13.5em;
+    background-color: #102938 !important;
+  }
+
+  /* Partnership Ipad pro
+----------------------------------------------------------------------------------*/
+
+  .partnership-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 22.5em;
+    height: auto;
+
+    margin: 0 auto;
+  }
+
+  .partnership-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.25em;
+    line-height: 1.4em;
+
+    width: 16em;
+    align-self: flex-start;
+    margin: 0 auto 1.25em;
+
+    color: #ffffff;
+  }
+
+  .partnership-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 22.5em;
+    margin: 0 auto;
+  }
+
+  .partner-elem {
+    margin: 0 auto 2.5em;
+    width: 19.5em;
+  }
+
+  .partner-elem:last-child {
+    margin-right: auto;
+  }
+
+  .partner-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    margin-bottom: 1.5em;
+
+    color: #ffffff;
+  }
+
+  .forbes-pic {
+    width: 3.6em;
+    height: 1.5em;
+  }
+
+  .telecom-pic {
+    width: 4.83em;
+    height: 1.5em;
+  }
+
+  .rostelecom-pic {
+    width: 4.13em;
+    height: 1.5em;
+  }
+
+  .kommersant-pic {
+    width: 7.26em;
+    height: 1em;
+  }
+
+  /* Footer Ipad pro
+----------------------------------------------------------------------------------*/
+  footer {
+    display: none;
+  }
+
+  #footer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top: 45%;
+    margin-bottom: 0em;
+  }
+
+  #footer-img {
+    width: auto;
+    height: 1.25em;
+  }
+
+  #footer-img-pilot {
+    padding-bottom: 0.3em;
+    width: auto;
+    height: 1.4em;
+  }
+
+  #footer-img-origin {
+    width: auto;
+    height: 1.5em;
+  }
+
+  #footer-img-bliz {
+    width: auto;
+    height: 1.5em;
+  }
+
+  .footer-link-row {
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  /* For burger menu */
+  .active {
+    display: flex;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .pressed {
+    display: flex;
+    top: 3.6em;
+  }
+
+  .unpressed {
+    display: none;
+    transition: 4s linear;
+  }
+
+  #jivo,
+  #lang {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .jivo,
+  .lang {
+    display: none;
+  }
+
+  #jivo {
+    padding-left: 2.8em;
+  }
+}
+
+/* Landscape Ipad and Ipadmini */
+@media only screen and (orientation: landscape) and (device-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+}
 /* Mobile 
 ------------------------------------------------------------------------------------------------*/
-
-@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 420px) {
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 1023px) {
   body {
     font-size: calc(100vw / 22.5);
   }
@@ -688,6 +1301,8 @@ footer {
     height: 3.56em;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
+
+    z-index: 999 !important;
   }
 
   .mobile-burger {
@@ -745,7 +1360,7 @@ footer {
   .menu-mobile {
     display: flex;
     position: fixed;
-    z-index: 9999999;
+    z-index: 999;
     flex-direction: column;
     top: -10em;
     height: auto;

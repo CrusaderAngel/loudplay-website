@@ -1,4 +1,4 @@
-if (window.screen.width > 421) {
+if (window.screen.width > 1024) {
   var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
 
