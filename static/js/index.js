@@ -13,10 +13,12 @@ const CURRENTLANGUAGE = LanguageManipulator.getCurrentLanguage();
 const PAGENAME = LanguageManipulator.getPagename();
 const ELEMENTS = LanguageManipulator.getElementsToTranslate(PAGENAME);
 
-if (CURRENTLANGUAGE == 'en') {
+if (CURRENTLANGUAGE == 'en' && PAGENAME != 'download') {
     document.querySelector('#globe').src = '/assets/misc/globe-en.svg'
 } else {
-    document.querySelector('#globe').src = '/assets/misc/globe.svg'
+    if (PAGENAME != 'download') {
+        document.querySelector('#globe').src = '/assets/misc/globe.svg'
+    }
 }
 
 //GTM Initialization
