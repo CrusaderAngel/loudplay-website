@@ -31,6 +31,14 @@
 </head>
 
 <body>
+    <script>
+        (function (w, d, s, h, id) {
+          w.roistatProjectId = id; w.roistatHost = h;
+          var p = d.location.protocol == "https:" ? "https://" : "http://";
+          var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+          var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', '33c9f75591031f08803eff9fda88a91d');
+      </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MX7NLF" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -87,7 +95,7 @@
                 <div class="page-content">
                     <div class="download-option-element">
                         <img id="pc" src="/assets/misc/windows-desktop.svg" alt="">
-                        <a class="play-button" href="/launcher/win/loudplay-latest-995162-66327704.exe">
+                        <a class="play-button download_win" href="https://dl.loudplay.ru/l/loudplay/win/loudplay-latest.exe">
                             <div class="download-option-element-text-wrapper">
                                 <p class="download-option-element-text"></p>
                             </div>
@@ -95,7 +103,7 @@
                     </div>
                     <div class="download-option-element">
                         <img id="mac" src="/assets/misc/mac-desktop.svg" alt="">
-                        <a href="/launcher/mac//loudplay-latest-995162-66327704.dmg">
+                        <a class="play-button download_mac" href="https://dl.loudplay.ru/l/loudplay/mac/loudplay-latest.dmg">
                             <div class="download-option-element-text-wrapper">
                                 <p class="download-option-element-text"></p>
                             </div>
@@ -103,7 +111,7 @@
                     </div>
                     <div class="download-option-element">
                         <img id="android" src="/assets/misc/android-device.svg" alt="">
-                        <a href="/launcher/android//loudplay.apk">
+                        <a  class="play-button download_android" href="https://dl.loudplay.ru/l/loudplay/android/apk/loudplay.apk">
                             <div class="download-option-element-text-wrapper">
                                 <p class="download-option-element-text"></p>
                             </div>
