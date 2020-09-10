@@ -46,25 +46,16 @@ function initGTM() {
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
-    if (CURRENTLANGUAGE == 'en' && screen.width > screen.height && PAGENAME == '/') {
-        document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
-    };
 };
 
 function switchLang() {
     const NEWLANG = LanguageManipulator.setNewLanguage();
     if (NEWLANG == 'en') {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe-en.svg')
-        document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0.5em';
-        if (screen.width > screen.height && PAGENAME == '/') {
-            document.getElementById('download-link-content').style.padding = '1.2em 5.3em';
-        };
+        document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0em';
     } else {
         document.querySelectorAll('#globe').forEach(item => item.src = '/assets/misc/globe.svg')
         document.querySelector('#navbar-download-link-mobile').style = 'margin-left: 0em'
-        if (screen.width < screen.height && PAGENAME == '/') {
-            document.getElementById('download-link-content').style.padding = '1.2em 4.6em !important';
-        };
     }
     LanguageManipulator.translateTo(NEWLANG, PAGENAME, ELEMENTS);
 
@@ -73,23 +64,17 @@ function switchLang() {
 let classNameArray = ['first', 'second', 'third', 'fourth', 'fifth'];
 
 function addEvent() {
-    classNameArray.forEach(name => {
-        document.querySelectorAll(`.${name}`).forEach(item => {
-            item.addEventListener('click', openAnswer)
-        });
+    document.querySelectorAll('.question-inner').forEach(elem => {
+        elem.addEventListener('click', openAnswer);
     });
 };
 
 addEvent();
 
 function openAnswer() {
-    classNameArray.forEach(item => {
-        if (event.target.classList.contains(item)) {
-            document.getElementById(item).style.display = 'flex';
-        } else {
-            document.getElementById(item).style.display = 'none';
-        }
-    });
+
+    let itemNumberAsString = event.target.classList['1'];
+    document.querySelector(`#${itemNumberAsString}`).classList.toggle('inactive');
 };
 
 
