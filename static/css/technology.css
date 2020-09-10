@@ -193,6 +193,11 @@ a {
 
 #page-1 {
   background: linear-gradient(180deg, #051621 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 #page-1-rectangle {
@@ -200,7 +205,6 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0 auto;
-  margin-top: 8.5em;
   width: 80.375em;
   height: 32.25em;
   border-radius: 1.5625em;
@@ -234,36 +238,78 @@ a {
   margin-top: 3.9em;
 }
 
+
+
+
+
+.page1-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.page1-2-images-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page1-2-image-wrapper-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page1-2-image-wrapper-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 #page-1-left {
   height: 30.56em;
   width: auto;
-  margin-top: 8.5em;
 }
 
 #page-1-right {
-  position: absolute;
   height: 30.56em;
   width: auto;
-  margin-top: 8.5em;
-  right: 0%;
+};
+
+#dots-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
 }
 
 #dots-left,
 #dots-right {
-  width: 50.75em;
+  width: 59vw;
   height: auto;
 }
 
 #dots-left {
-  position: relative;
-  top: -16.7em;
-  left: 1em;
+
 }
 
 #dots-right {
-  position: relative;
-  top: -12.7em;
-  left: 18.4em;
+  
 }
 
 .page-1-text-wrapper {

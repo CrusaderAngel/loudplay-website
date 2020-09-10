@@ -34,10 +34,10 @@ export default class LanguageManipulator {
 
         static getPagename() {
             let pageName;
-            if(window.location.pathname == '/' || window.location.pathname == '/index') {
+            if(window.location.pathname == '/' || window.location.pathname == '/index.html') {
                 pageName = '/'
             } else {
-                pageName = window.location.pathname.split('/').pop().replace('/', '');
+                pageName = window.location.pathname.split('/').pop().replace('/', '').replace('.html', '');
             }
             return pageName;
         };
