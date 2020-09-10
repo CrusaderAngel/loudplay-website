@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+#answer-link {
+  color: #A0B4CB;
+}
+
 .question-inner:hover {
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
 }
@@ -529,6 +533,9 @@ a {
 #page-7 {
   background: url('../../assets/pages/main/background/illidan.png');
   height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -547,7 +554,7 @@ a {
   width: 23em;
   height: 16.5em;
   position: relative;
-  top: 30%;
+  bottom: 35%;
   left: 20%;
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +607,7 @@ a {
 
 footer {
   position: relative;
-  top: 65%;
+  bottom: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -638,11 +645,7 @@ footer {
   body {
     font-size: 22.5px;
   }
-  
 
-  footer {
-    top: 75%;
-  }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
@@ -651,9 +654,6 @@ footer {
     font-size: 14px;
   }
 
-  footer {
-    top: 70% !important;
-  }
   
 }
 
@@ -661,9 +661,6 @@ footer {
 
 @media only screen and (orientation: landscape) and (min-width: 1366px) and (min-height: 1024px)  {
 
-  footer {
-    top: 75%
-  }
   
 }
 /*Ipad Pro*/
@@ -1035,11 +1032,10 @@ footer {
     width: 20em;
     height: 12.7em;
     position: relative;
-    top: 0em;
+    bottom: 30%;
     left: 0em;
     margin-left: auto;
     margin-right: auto;
-    top: 4em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1071,7 +1067,6 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    top: 40%;
   }
 
   #footer-img {
@@ -1136,12 +1131,9 @@ footer {
     height: 135vh;
   }
 
-  #footer-mobile {
-    top: 30% !important;
-  }
 
   #page-7 {
-    height: 100vh !important;
+    height: 120vh !important;
   }
 
 }
@@ -1510,11 +1502,10 @@ footer {
     width: 20em;
     height: 12.7em;
     position: relative;
-    top: 0em;
+    bottom:30%;
     left: 0em;
     margin-left: auto;
     margin-right: auto;
-    top: 4em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1546,7 +1537,6 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    top: 40%;
   }
 
   #footer-img {
@@ -2013,11 +2003,10 @@ footer {
     width: 20em;
     height: 12.7em;
     position: relative;
-    top: 0em;
+    bottom: 30%;
     left: 0em;
     margin-left: auto;
     margin-right: auto;
-    top: 4em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2049,7 +2038,6 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    top: 45%;
   }
 
   #footer-img {

@@ -92,39 +92,42 @@ function redirectBack() {
 function getRoistatId() {
 
     let roistatVisit = document.cookie.slice(
-      document.cookie.indexOf('roistat_visit=') + 14,
-      document.cookie.indexOf(
-        ';',
-        document.cookie.indexOf('roistat_visit=') + 14
-      )
+        document.cookie.indexOf('roistat_visit=') + 14,
+        document.cookie.indexOf(
+            ';',
+            document.cookie.indexOf('roistat_visit=') + 14
+        )
     )
-  
+
     if (roistatVisit == 'null') roistatVisit = '';
     return roistatVisit
-  }
-  
-  document.querySelectorAll('.download_win').forEach(function (el) {
+}
+
+document.querySelectorAll('.download_win').forEach(function (el) {
     el.onclick = function () {
-  
-      window.location.replace(`https://dl.loudplay.ru/l/loudplay/win/loudplay-latest.exe${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
-      dataLayer.push({ event: 'Download_Launcher' })
-      return false;
+
+        window.location.replace(`https://dl.loudplay.ru/l/loudplay/win/loudplay-latest.exe${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
+        dataLayer.push({ event: 'Download_Launcher' })
+        return false;
     };
-  });
-  
-  document.querySelectorAll('.download_mac').forEach(function (el) {
+});
+
+document.querySelectorAll('.download_mac').forEach(function (el) {
     el.onclick = function () {
-  
-      window.location.replace(`https://dl.loudplay.ru/l/loudplay/mac/loudplay-latest.dmg${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
-      dataLayer.push({ event: 'Download_Launcher' })
-      return false;
+
+        window.location.replace(`https://dl.loudplay.ru/l/loudplay/mac/loudplay-latest.dmg${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
+        dataLayer.push({ event: 'Download_Launcher' })
+        return false;
     };
-  });
-  
-  document.querySelectorAll('.download_android').forEach(function (el) {
+});
+
+document.querySelectorAll('.download_android').forEach(function (el) {
     el.onclick = function () {
-      window.location.replace(`https://dl.loudplay.ru/l/loudplay/android/apk/loudplay.apk${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
-      dataLayer.push({ event: 'Download_Launcher' })
-      return false;
+        window.location.replace(`https://dl.loudplay.ru/l/loudplay/android/apk/loudplay.apk${getRoistatId() ? '?id=' + getRoistatId() : ''}`);
+        dataLayer.push({ event: 'Download_Launcher' })
+        return false;
     };
-  });
+});
+
+
+
