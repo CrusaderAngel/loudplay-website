@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+#cross:hover {
+  cursor: pointer;
+}
+
 #logo-loudplay {
   margin: 0em 0em;
 }
