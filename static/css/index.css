@@ -171,7 +171,7 @@ a {
       rgba(0, 15, 28, 0.73) 0.51%,
       rgba(0, 15, 28, 0) 31.56%
     ),
-    url('../../assets/pages/main/background/starwars.png');
+    url('../../assets/pages/main/background/starwars.svg');
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;

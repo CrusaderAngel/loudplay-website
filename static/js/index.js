@@ -46,6 +46,12 @@ function initGTM() {
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
+    if(CURRENTLANGUAGE == 'en' && PAGENAME == 'technology') {
+        document.getElementById('page-1-left').src = '/assets/pages/technology/pc-left-en.png';
+        document.getElementById('page-1-right').src = '/assets/pages/technology/cs-right-en.png';
+        document.querySelector('.img-left').src = '/assets/pages/technology/pc-left-mobile-en.png';
+        document.querySelector('.img-right').src = '/assets/pages/technology/cs-right-mobile-en.png';
+    }
 };
 
 function switchLang() {
