@@ -605,12 +605,12 @@ a {
 
 footer {
   position: relative;
-  top: 65%;
+  padding: 0em 2em;
+  bottom: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1.5em;
 }
 
 .footer-link-row {
@@ -621,11 +621,16 @@ footer {
 }
 
 #footer-link {
-  padding-right: 2em;
+  padding-right: 2.5em;
+}
+
+#footer-link:hover {
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 #footer-img {
-  width: 120%;
+  width: 100%;
   height: auto;
 }
 
@@ -636,8 +641,13 @@ footer {
 }
 
 #footer-img-origin {
-  width: 150%;
+  width: 100%;
   height: auto;
+}
+
+#footer-link-trust:hover {
+  cursor: pointer;
+  opacity: 0.4;
 }
 
 /* High res displays 

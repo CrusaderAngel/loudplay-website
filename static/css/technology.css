@@ -450,9 +450,12 @@ a {
 }
 
 footer {
+  position: relative;
+  padding: 0em 2em;
+  bottom: 2em;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -461,15 +464,19 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1em 9em;
 }
 
 #footer-link {
-  padding-right: 2em;
+  padding-right: 2.5em;
+}
+
+#footer-link:hover {
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 #footer-img {
-  width: 120%;
+  width: 100%;
   height: auto;
 }
 
@@ -480,8 +487,14 @@ footer {
 }
 
 #footer-img-origin {
-  width: 150%;
+  width: 100%;
   height: auto;
+}
+
+
+#footer-link-trust:hover {
+  cursor: pointer;
+  opacity: 0.4;
 }
 
 /*Tablets landscape*/
