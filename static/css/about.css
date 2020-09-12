@@ -667,6 +667,22 @@ footer {
 /*Ipad Pro
 ----------------------------------------------------------------------------------------------------------------*/
 @media only screen and (orientation: portrait) and (min-device-width: 1024px) and (min-device-height: 1366px) {
+
+
+  #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #footer-link {
+    padding-right: 2em;
+  }
+
   body {
     font-size: calc(100vw / 22.5);
   }
@@ -1275,6 +1291,21 @@ footer {
 /* Mobile 
 ------------------------------------------------------------------------------------------------*/
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 1023px) {
+
+  #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #footer-link {
+    padding-right: 2em;
+  }
+
   body {
     font-size: calc(100vw / 22.5);
   }

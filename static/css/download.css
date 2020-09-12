@@ -507,6 +507,19 @@ img {
 }
 
 @media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 800px) {
+  #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #footer-link {
+    padding-right: 2em;
+  }
 
   #headset {
     height: 1.5em;
