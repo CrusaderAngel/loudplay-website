@@ -11,11 +11,11 @@
 body {
   width: auto;
   background-color: #051621;
-  font-size: calc(100vh / 48);
+  font-size: 16px;
   overflow-x: hidden;
 }
 
-#globe:hover{
+#globe:hover {
   cursor: pointer !important;
 }
 
@@ -149,8 +149,8 @@ a {
 }
 
 #navbar-download-link-content {
-  padding: 0.75em 0em;
-  width: 12.5em;
+  padding: 0.75em 0.5em;
+  width: 10em;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -158,11 +158,10 @@ a {
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
   opacity: 1;
   color: #ffffff;
-  font-size: 0.875em;
-  line-height: 1.125em;
-  letter-spacing: 0.05em;
+  font-size: 0.75em;
+  line-height: 1em;
   transition: 0.2s linear;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 #navbar-download-link-content:hover {
@@ -171,8 +170,8 @@ a {
 
 #headset,
 #globe {
-  width: 130%;
-  height: 130%;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -289,7 +288,9 @@ a {
   z-index: 50;
   height: 30.56em;
   width: auto;
-};
+}
+
+;
 
 #dots-wrapper {
   display: flex;
@@ -483,9 +484,10 @@ footer {
   height: auto;
 }
 
-/*Tablets landscape*/ 
+/*Tablets landscape*/
 
 @media only screen and (orientation: landscape) and (min-width: 960px) and (max-width: 1023px) {
+
   #footer-img,
   #footer-img-pilot,
   #footer-img-origin {
@@ -502,10 +504,10 @@ footer {
     height: auto;
   }
 
- #loud-lion {
-   height: 3em;
-   width: auto;
- }
+  #loud-lion {
+    height: 3em;
+    width: auto;
+  }
 
   #navbar-misc {
     padding-right: 0em;
@@ -514,7 +516,7 @@ footer {
   #lang {
     padding-right: 0em;
   }
-  
+
   #logo-bottom {
     width: 5em;
     height: auto;
@@ -529,7 +531,7 @@ footer {
 /*Nexus like tablets*/
 
 @media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 1024px) {
-  
+
   #loud-lion {
     height: 2.5em;
     width: auto;
@@ -546,10 +548,11 @@ footer {
   #headset {
     width: 1em;
   }
-  #globe{
+
+  #globe {
     width: 2em;
   }
-  
+
   body {
     font-size: calc(100vw / 22.5);
     background: #051621;
@@ -907,6 +910,7 @@ footer {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 640px) and (max-width: 815px) {
+
   #footer-img,
   #footer-img-pilot,
   #footer-img-origin {
@@ -923,10 +927,10 @@ footer {
     height: auto;
   }
 
- #loud-lion {
-   height: 3em;
-   width: auto;
- }
+  #loud-lion {
+    height: 3em;
+    width: auto;
+  }
 
   #navbar-misc {
     padding-right: 0em;
@@ -935,7 +939,7 @@ footer {
   #lang {
     padding-right: 0em;
   }
-  
+
   #logo-bottom {
     width: 5em;
     height: auto;
@@ -1300,4 +1304,3 @@ footer {
     padding-left: 2.8em;
   }
 }
-

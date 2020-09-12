@@ -7,6 +7,9 @@
   color: #A0B4CB;
 }
 
+.burger-cross {
+  padding-left: 0em !important;
+}
 
 
 
@@ -709,6 +712,14 @@ footer {
 /*Ipad Pro*/
 @media only screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
 
+  #arrow-first,
+  #arrow-second,
+  #arrow-third,
+  #arrow-fourth,
+  #arrow-fifth {
+    display: none;
+  }
+
   .burger-cross,
   .burger-icon,
   #headset {
@@ -1179,11 +1190,27 @@ footer {
     height: 120vh !important;
   }
 
+  #arrow-first,
+  #arrow-second,
+  #arrow-third,
+  #arrow-fourth,
+  #arrow-fifth {
+    display: none;
+  }
+
 }
 
 /*Nexus like tablets*/
 
 @media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 800px) {
+
+  #arrow-first,
+  #arrow-second,
+  #arrow-third,
+  #arrow-fourth,
+  #arrow-fifth {
+    display: none;
+  }
 
   #logos-left {
     padding-top: 1em;
@@ -2076,7 +2103,13 @@ footer {
     display: none;
   }
 
+  #footer-link {
+    padding-right: 2em;
+  }
+
   #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

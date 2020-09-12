@@ -49,7 +49,7 @@
 body {
   width: auto;
   background-color: #000f1c;
-  font-size: calc(100vh / 48);
+  font-size: 16px;
   overflow-x: hidden;
 }
 
@@ -147,8 +147,8 @@ a {
 
 #headset,
 #globe {
-  width: 130%;
-  height: 130%;
+  width: 100%;
+  height: 100%;
 }
 
 .label_f2f {
@@ -279,12 +279,12 @@ img {
   body {
     font-size: 22.5px;
   }
-  
+
 }
 
 @media only screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
 
-  #logo-loudplay{
+  #logo-loudplay {
     height: 3em;
     width: auto;
   }
