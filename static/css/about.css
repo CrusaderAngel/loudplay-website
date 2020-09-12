@@ -219,6 +219,7 @@ a {
 }
 
 .about-main-page-text {
+  width: 75vw;
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
@@ -530,7 +531,7 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  width: 70.25em;
+  width: 82vw;
   height: 14.31em;
 
   margin-left: 7.5em;
@@ -554,7 +555,7 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  width: 70.25em;
+  width: 82vw;
 }
 
 .partner-elem {
@@ -658,7 +659,7 @@ footer {
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
+@media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1366px) {
   body {
     font-size: 16px;
   }
@@ -668,6 +669,25 @@ footer {
 ----------------------------------------------------------------------------------------------------------------*/
 @media only screen and (orientation: portrait) and (min-device-width: 1024px) and (min-device-height: 1366px) {
 
+  #logo-lion {
+    widows: 2.5em;
+    height: 2.5em;
+  }
+
+  #navbar-download-link-content-mobile {
+    padding: 0.75em 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 0.4;
+    color: #ffffff;
+    font-size: 0.75em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 8px;
+  }
 
   #footer-mobile {
     bottom: 0em !important;
@@ -751,8 +771,8 @@ footer {
   }
 
   #logo-lion {
-    widows: 2em;
-    height: 2em;
+    widows: 2.5em;
+    height: 2.5em;
   }
 
   #navbar-download-link-mobile {
@@ -1292,6 +1312,25 @@ footer {
 ------------------------------------------------------------------------------------------------*/
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 1023px) {
 
+  #logo-lion {
+    widows: 2.5em;
+    height: 2.5em;
+  }
+
+  .burger-icon {
+    width: 1em;
+  }
+  .burger-cross {
+    width: 1em;
+  }
+
+  #headset {
+    width: 1em;
+  }
+  #globe {
+    width: 2em;
+
+  }
   #footer-mobile {
     bottom: 0em !important;
     padding: 0em 0em !important;
