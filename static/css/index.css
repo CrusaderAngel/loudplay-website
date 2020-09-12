@@ -712,6 +712,73 @@ footer {
 /*Ipad Pro*/
 @media only screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
 
+  #logo-bottom {
+    width: 60% !important;
+    height: auto;
+  }
+
+
+  #footer-download-link-content {
+    width: 15em !important;
+    text-align: center;
+    padding: 1.25em 1.75em !important;
+    margin-left: 0.5em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  #jivo {
+    width: 1em;
+  }
+
+  #lang {
+    width: 2em;
+  }
+
+  .burger-icon,
+  .burger-cross {
+    width: 1em;
+  }
+
+  .another {
+    padding: 0.3em 1em !important;
+    width: 21em !important;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+  }
+
+  #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #footer-link {
+    padding-right: 2em;
+  }
+
   #arrow-first,
   #arrow-second,
   #arrow-third,
@@ -747,6 +814,7 @@ footer {
     height: 3.56em;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
+    z-index: 99999 !important;
   }
 
   .mobile-burger {
@@ -1203,6 +1271,74 @@ footer {
 /*Nexus like tablets*/
 
 @media only screen and (orientation: portrait) and (min-width: 421px) and (max-width: 800px) {
+  #logo-bottom {
+    width: 60% !important;
+    height: auto;
+  }
+
+
+  #jivo {
+    width: 1em;
+  }
+
+  #lang {
+    width: 2em;
+  }
+
+  .burger-icon,
+  .burger-cross {
+    width: 1em;
+  }
+
+  #footer-download-link-content {
+    width: 15em !important;
+    text-align: center;
+    padding: 1.25em 1.75em !important;
+    margin-left: 0.5em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  .another {
+    padding: 0.3em 1em !important;
+    width: 21em !important;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+  }
+
+  #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #footer-link {
+    padding-right: 2em;
+  }
+
+
 
   #arrow-first,
   #arrow-second,
@@ -1233,6 +1369,7 @@ footer {
     height: 3.56em;
     background: rgba(5, 22, 33, 0.7);
     backdrop-filter: blur(16px);
+    z-index: 999999 !important;
   }
 
   .mobile-burger {
