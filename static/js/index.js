@@ -46,7 +46,7 @@ function initGTM() {
 
 function renderDefaultText() {
     LanguageManipulator.translateTo(CURRENTLANGUAGE, PAGENAME, ELEMENTS);
-    if(CURRENTLANGUAGE == 'en' && PAGENAME == 'technology') {
+    if (CURRENTLANGUAGE == 'en' && PAGENAME == 'technology') {
         document.getElementById('page-1-left').src = '/assets/pages/technology/pc-left-en.png';
         document.getElementById('page-1-right').src = '/assets/pages/technology/cs-right-en.png';
         document.querySelector('.img-left').src = '/assets/pages/technology/pc-left-mobile-en.png';
@@ -72,15 +72,44 @@ let classNameArray = ['first', 'second', 'third', 'fourth', 'fifth'];
 function addEvent() {
     document.querySelectorAll('.question-inner').forEach(elem => {
         elem.addEventListener('click', openAnswer);
+        elem.addEventListener('mouseover', highlight);
+        elem.addEventListener('mouseout', darken);
     });
 };
 
+
+
 addEvent();
+
+function highlight() {
+    let itemName = event.target.classList['1'];
+    if (!document.querySelector(`#${itemName}`).classList['1']) {
+        document.querySelector(`.${itemName}`).style.background = '#000f1c';
+        document.querySelector(`#arrow-${itemName}`).style.color = '#A0B4CB';
+    } else {
+        document.querySelector(`.${itemName}`).style.background = 'linear-gradient(180deg, #ff2f01 0%, #ff055f 100%)';
+        document.querySelector(`#arrow-${itemName}`).style.color = '#FFF'
+    }
+};
+
+function darken() {
+    let itemName = event.target.classList['1'];
+    document.querySelector(`.${itemName}`).style.background = '#000f1c';
+    document.querySelector(`#arrow-${itemName}`).style.color = '#A0B4CB';
+}
 
 function openAnswer() {
 
     let itemNumberAsString = event.target.classList['1'];
     document.querySelector(`#${itemNumberAsString}`).classList.toggle('inactive');
+    document.querySelector(`.${itemNumberAsString}`).style.background = '#000f1c'
+    if (!document.querySelector(`#${itemNumberAsString}`).classList['1']) {
+        document.querySelector(`#arrow-${itemNumberAsString}`).innerHTML = '&#8963';
+        document.querySelector(`#arrow-${itemNumberAsString}`).style = 'top: 0.7em';
+    } else {
+        document.querySelector(`#arrow-${itemNumberAsString}`).innerHTML = '&#8964';
+        document.querySelector(`#arrow-${itemNumberAsString}`).style = 'top: 0.3em';
+    }
 };
 
 

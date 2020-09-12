@@ -7,9 +7,8 @@
   color: #A0B4CB;
 }
 
-.question-inner:hover {
-  background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-}
+
+
 
 #globe:hover {
   cursor: pointer;
@@ -25,9 +24,9 @@
 
 
 body {
-  width: auto;
+  width: 100vw;
   background-color: #000f1c;
-  font-size: calc(100vh / 48);
+  font-size: 16px;
   overflow-x: hidden;
 }
 
@@ -57,6 +56,10 @@ body {
 a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  cursor: pointer !important;
 }
 
 #navbar-main-link {
@@ -126,8 +129,8 @@ a {
 }
 
 #navbar-download-link-content {
-  padding: 0.75em 0em;
-  width: 12.5em;
+  padding: 0.75em 0.5em;
+  width: 10em;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -135,17 +138,20 @@ a {
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
   opacity: 1;
   color: #ffffff;
-  font-size: 0.875em;
-  line-height: 1.125em;
-  letter-spacing: 0.05em;
+  font-size: 0.75em;
+  line-height: 1em;
   transition: 0.2s linear;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+#download-link-content:hover {
+  cursor: pointer !important;
 }
 
 #headset,
 #globe {
-  width: 130%;
-  height: 130%;
+  width: 100%;
+  height: 100%;
 }
 
 .inactive {
@@ -166,11 +172,9 @@ a {
 
 /*****************************Main page************************************/
 #page-1 {
-  background: linear-gradient(
-      62.93deg,
+  background: linear-gradient(62.93deg,
       rgba(0, 15, 28, 0.73) 0.51%,
-      rgba(0, 15, 28, 0) 31.56%
-    ),
+      rgba(0, 15, 28, 0) 31.56%),
     url('../../assets/pages/main/background/starwars.svg');
   background-size: 100% 100vh;
   background-position: center;
@@ -182,13 +186,14 @@ a {
   width: auto;
   height: 100%;
   display: flex;
-  padding-left: 4.6em;
+  padding-left: 5em;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
 #main-header {
+  width: auto;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -198,7 +203,7 @@ a {
 }
 
 .page-content-subheader {
-  margin-top: 1em;
+  margin-top: 1.2em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -213,7 +218,7 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  bottom: 5em;
+  bottom: 5.9em;
 }
 
 #logos-left,
@@ -228,14 +233,19 @@ a {
 #logos-right {
   align-items: flex-end;
   justify-content: center;
+  padding-right: 2.5em;
 }
 
 .logos-element-left {
   padding-left: 5em;
 }
 
+.logos-element-left-nvidia {
+  padding-left: 5.6em;
+}
+
 .logos-element-right {
-  padding-right: 5em;
+  padding-right: 2.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -243,7 +253,7 @@ a {
 }
 
 .logos-element-header {
-  margin-bottom: 0.75em;
+  margin-bottom: 1em;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -255,18 +265,34 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3em;
+  padding-top: 2.8em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #download-link-content {
-  width: fit-content;
   padding: 1.2em 0em;
-  width: 25.5em;
+  width: 25.75em;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
   opacity: 1;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 8px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.875em;
+  line-height: 1.125em;
+  letter-spacing: 0.05em;
+  transition: 0.2s linear;
+}
+
+.another {
+  padding: 1.2em 3.8em !important;
+  width: fit-content !important;
+  background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+  opacity: 1;
+  color: #ffffff;
+  border-radius: 8px;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -298,7 +324,7 @@ a {
   margin-top: 1.3em;
   width: 100%;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-  border-radius: 12px;
+  border-radius: 8px;
   opacity: 1;
 }
 
@@ -307,11 +333,11 @@ a {
   justify-content: center;
   align-items: center;
   height: 3em;
-  width: 17.8em;
+  width: 19.9em;
   margin: 0.25% 0.25%;
-  padding: 0em 2.3em;
+  padding: 0em 1.3em;
   background: #0b1625;
-  border-radius: 12px;
+  border-radius: 8px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -324,7 +350,8 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 0.875em;
-  line-height: 1.125em;
+  line-height: 0.875em;
+  letter-spacing: 0.05em;
   background: -webkit-linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -343,7 +370,7 @@ a {
   width: auto;
   height: 100%;
   display: flex;
-  padding-left: 4.6em;
+  padding-left: 5em;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -383,7 +410,7 @@ a {
   width: auto;
   height: 100%;
   display: flex;
-  padding-right: 4.7em;
+  padding-right: 5em;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
@@ -462,12 +489,12 @@ a {
 
 .question-border {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 2.6em;
   width: 100%;
   height: auto;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
-  border-radius: 26px;
+  border-radius: 1em;
 }
 
 .question-inner {
@@ -476,22 +503,29 @@ a {
   width: 53.7em;
   height: auto;
   background: #000f1c;
-  border-radius: 26px;
+  border-radius: 1em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: 0.2s linear;
 }
 
-.question-row,
-.answer-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+#arrow-first,
+#arrow-second,
+#arrow-third,
+#arrow-fourth,
+#arrow-fifth {
+  width: 0em;
+  position: relative;
+  top: 0.3em;
+  right: 1.5em;
+  color: #A0B4CB;
+  font-size: 3em;
 }
 
-.question-row::after {
+/* 
+.question-border::after {
   content: url('https://api.iconify.design/ic:round-keyboard-arrow-down.svg?color=%23A0B4CB&height=3em');
-}
+  position: relative;
+} */
 
 .question-inner:hover {
   cursor: pointer;
@@ -580,8 +614,13 @@ a {
   height: auto;
 }
 
+#footer-link-trust:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
 #footer-download-link-content {
-  width: 16em;
+  width: 12em !important;
   text-align: center;
   padding: 1.25em 1.75em;
   font-family: 'Rubik', sans-serif;
@@ -607,6 +646,7 @@ a {
 
 footer {
   position: relative;
+  padding: 0em 2em;
   bottom: 2em;
   display: flex;
   flex-direction: row;
@@ -622,11 +662,16 @@ footer {
 }
 
 #footer-link {
-  padding-right: 2em;
+  padding-right: 2.5em;
+}
+
+#footer-link:hover {
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 #footer-img {
-  width: 120%;
+  width: 100%;
   height: auto;
 }
 
@@ -637,13 +682,13 @@ footer {
 }
 
 #footer-img-origin {
-  width: 150%;
+  width: 100%;
   height: auto;
 }
 
 @media (min-width: 1922px) {
   body {
-    font-size: 22.5px;
+    font-size: 16px;
   }
 
 }
@@ -651,23 +696,21 @@ footer {
 @media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
 
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  
+
 }
 
 /*Ipad Pro Landscape*/
 
-@media only screen and (orientation: landscape) and (min-width: 1366px) and (min-height: 1024px)  {
 
-  
-}
+
 /*Ipad Pro*/
 @media only screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
-  
+
   .burger-cross,
-  .burger-icon ,
+  .burger-icon,
   #headset {
     width: 1em !important;
     height: auto;
@@ -676,7 +719,7 @@ footer {
   #globe {
     width: 2em;
   }
-  
+
   body {
     font-size: calc(100vw / 22.5);
   }
@@ -824,9 +867,9 @@ footer {
   #page-1 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/starwars-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   .main-header-container {
@@ -886,33 +929,33 @@ footer {
   #page-2 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/nfs-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-3 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/witcher-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-4 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/payday-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-5 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/warthunder-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-7 {
@@ -1118,8 +1161,8 @@ footer {
   .lang {
     display: none;
   }
-  
-  #jivo{
+
+  #jivo {
     padding-left: 2.8em;
   }
 }
@@ -1294,9 +1337,9 @@ footer {
   #page-1 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/starwars-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   .main-header-container {
@@ -1356,33 +1399,33 @@ footer {
   #page-2 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/nfs-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-3 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/witcher-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-4 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/payday-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-5 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
       url('../../assets/pages/main/background_mobile/warthunder-mobile.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
   }
 
   #page-7 {
@@ -1502,7 +1545,7 @@ footer {
     width: 20em;
     height: 12.7em;
     position: relative;
-    bottom:30%;
+    bottom: 30%;
     left: 0em;
     margin-left: auto;
     margin-right: auto;
@@ -1588,50 +1631,51 @@ footer {
   .lang {
     display: none;
   }
-  
-  #jivo{
+
+  #jivo {
     padding-left: 2.8em;
   }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 640px) and (max-width: 815px) {
-    #footer-img,
-    #footer-img-pilot,
-    #footer-img-origin {
-      width: 50%;
-    }
 
-    #footer-link {
-      padding-right: 0em;
-    }
+  #footer-img,
+  #footer-img-pilot,
+  #footer-img-origin {
+    width: 50%;
+  }
 
-    #headset,
-    #globe {
-      width: 70%;
-      height: auto;
-    }
+  #footer-link {
+    padding-right: 0em;
+  }
 
-   #loud-lion {
-     height: 3em;
-     width: auto;
-   }
+  #headset,
+  #globe {
+    width: 70%;
+    height: auto;
+  }
 
-    #navbar-misc {
-      padding-right: 0em;
-    }
+  #loud-lion {
+    height: 3em;
+    width: auto;
+  }
 
-    #lang {
-      padding-right: 0em;
-    }
-    
-    #logo-bottom {
-      width: 5em;
-      height: auto;
-    }
+  #navbar-misc {
+    padding-right: 0em;
+  }
 
-    .play-button {
-      padding-right: 2em;
-    }
+  #lang {
+    padding-right: 0em;
+  }
+
+  #logo-bottom {
+    width: 5em;
+    height: auto;
+  }
+
+  .play-button {
+    padding-right: 2em;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 320px) and (max-width: 420px) {
@@ -2089,9 +2133,17 @@ footer {
   .lang {
     display: none;
   }
-  
-  #jivo{
+
+  #jivo {
     padding-left: 2.8em;
   }
-  
+
+  #arrow-first,
+  #arrow-second,
+  #arrow-third,
+  #arrow-fourth,
+  #arrow-fifth {
+    display: none;
+  }
+
 }

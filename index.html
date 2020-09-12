@@ -33,10 +33,16 @@
 <body>
   <script>
     (function (w, d, s, h, id) {
-      w.roistatProjectId = id; w.roistatHost = h;
+      w.roistatProjectId = id;
+      w.roistatHost = h;
       var p = d.location.protocol == "https:" ? "https://" : "http://";
       var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
-      var js = d.createElement(s); js.charset = "UTF-8"; js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+      var js = d.createElement(s);
+      js.charset = "UTF-8";
+      js.async = 1;
+      js.src = p + h + u;
+      var js2 = d.getElementsByTagName(s)[0];
+      js2.parentNode.insertBefore(js, js2);
     })(window, document, 'script', 'cloud.roistat.com', '33c9f75591031f08803eff9fda88a91d');
   </script>
   <!-- Google Tag Manager (noscript) -->
@@ -80,10 +86,10 @@
       </div>
 
       <div id="navbar-misc">
-        <div  class="jivo" id="jivo">
+        <div class="jivo" id="jivo">
           <a href="javascript:jivo_api.open()"><img src="/assets/misc/headset.svg" id="headset"></a>
         </div>
-        <div class="lang"  id="lang">
+        <div class="lang" id="lang">
           <img src="/assets/misc/globe.svg" id="globe">
         </div>
         <a class="play-button" href="/download.html" id="navbar-download-link-mobile">
@@ -130,7 +136,7 @@
               <p class="logos-element-header"></p>
               <img id="logo-bottom" src="/assets/logos/skolkovo.svg" alt="" srcset="">
             </div>
-            <div class="logos-element-left">
+            <div class="logos-element-left-nvidia">
               <p class="logos-element-header"></p>
               <img id="logo-bottom" src="/assets/logos/nvidia.svg" alt="" srcset="">
             </div>
@@ -143,11 +149,11 @@
             </div>
             <div class="logos-element-right">
               <p class="logos-element-header-empty"> </p>
-              <img id="logo-bottom" src="/assets/logos/mac.svg" alt="" srcset="">
+              <img id="logo-bottom" src="/assets/logos/android.svg" alt="" srcset="">
             </div>
             <div class="logos-element-right">
               <p class="logos-element-header"></p>
-              <img id="logo-bottom" src="/assets/logos/android.svg" alt="" srcset="">
+              <img id="logo-bottom" src="/assets/logos/mac.svg" alt="" srcset="">
             </div>
           </div>
         </div>
@@ -157,7 +163,7 @@
           <h2 id="page-content-header-left"></h2>
           <p class="page-content-subheader-left">
             <a class="play-button" href="/download.html" id="download-link">
-              <div id="download-link-content">
+              <div class="another" id="download-link-content">
               </div>
             </a>
         </div>
@@ -168,7 +174,7 @@
           <p class="page-content-subheader-right">
           </p>
           <a class="play-button" href="/download.html" id="download-link">
-            <div id="download-link-content">
+            <div class="another" id="download-link-content">
             </div>
           </a>
         </div>
@@ -179,7 +185,7 @@
           <p class="page-content-subheader-left">
           </p>
           <a class="play-button" href="/download.html" id="download-link">
-            <div id="download-link-content">
+            <div class="another" id="download-link-content">
             </div>
           </a>
         </div>
@@ -190,7 +196,7 @@
           <p class="page-content-subheader-right">
           </p>
           <a class="play-button" href="/download.html" id="download-link">
-            <div id="download-link-content">
+            <div class="another" id="download-link-content">
             </div>
           </a>
         </div>
@@ -210,6 +216,7 @@
               <p class="answer-text inactive" id="first">
               </p>
             </div>
+            <p id="arrow-first">&#8964</p>
           </div>
           <div class="question-border">
             <div class="question-inner second">
@@ -220,6 +227,7 @@
               <p class="answer-text inactive" id="second">
               </p>
             </div>
+            <p id="arrow-second">&#8964</p>
           </div>
           <div class="question-border">
             <div class="question-inner third">
@@ -231,6 +239,7 @@
 
               </p>
             </div>
+            <p id="arrow-third">&#8964</p>
           </div>
           <div class="question-border">
             <div class="question-inner fourth">
@@ -241,6 +250,7 @@
               <p class="answer-text inactive" id="fourth">
               </p>
             </div>
+            <p id="arrow-fourth">&#8964</p>
           </div>
           <div class="question-border">
             <div class="question-inner fifth">
@@ -251,6 +261,7 @@
               <p class="answer-text inactive" id="fifth">
               </p>
             </div>
+            <p id="arrow-fifth">&#8964</p>
           </div>
         </div>
       </div>
@@ -261,7 +272,7 @@
             <h4 id="illidan-speaks-header">
             </h4>
             <a class="play-button" href="/download.html" id="footer-download-link">
-              <div id="footer-download-link-content">
+              <div class="another" id="footer-download-link-content">
               </div>
             </a>
           </div>
