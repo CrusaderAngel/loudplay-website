@@ -834,7 +834,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px !important;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1320,7 +1320,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1822,7 +1822,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -2179,4 +2179,37 @@ footer {
     display: none;
   }
 
+  .another {
+    padding: 0.3em 1em !important;
+    width: 21em !important;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+  }
+
+  #footer-download-link-content {
+    width: 15em !important;
+    text-align: center;
+    padding: 1.25em 1.75em !important;
+    margin-left: 0.5em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.05em;
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
 }

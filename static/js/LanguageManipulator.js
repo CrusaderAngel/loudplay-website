@@ -45,7 +45,7 @@ export default class LanguageManipulator {
     static getElementsToTranslate(pageName) {
         switch (pageName) {
             case 'technology':
-                return [".navbar-link", "#navbar-download-link-content", "#page-1-rectangle-element-header", ".page-1-text-content", "#navbar-download-link-content-mobile", ".page-1-rectangle-element-text", ".page-container-text-header", ".page-container-text-paragraph", ".mobile-header", ".rectangle-text-mobile", ".rectangle-outside-text", ".page-2-header", ".mobile-page-bigpicture-header", ".mobile-bigpicture-text"];
+                return [".navbar-link", "#navbar-download-link-content", "#page-1-rectangle-element-header", "#page-1-rectangle-element-header-empty", ".page-1-text-content", "#navbar-download-link-content-mobile", ".page-1-rectangle-element-text", ".page-container-text-header", ".page-container-text-paragraph", ".mobile-header", ".rectangle-text-mobile", ".rectangle-outside-text", ".page-2-header", ".mobile-page-bigpicture-header", ".mobile-bigpicture-text"];
                 break;
             case 'download':
                 return [".navbar-link", "#download-header", "#download-subheader", ".download-option-element-text"];

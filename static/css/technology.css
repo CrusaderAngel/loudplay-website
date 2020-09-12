@@ -191,7 +191,7 @@ a {
 }
 
 #page-1 {
-  background: linear-gradient(180deg, #051621 0%, #000000 100%);
+  background: #051621;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,14 +204,14 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0 auto;
-  width: 80.375em;
-  height: 32.25em;
+  width: 95%;
+  height: 70%;
   border-radius: 1.5625em;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
 }
 
 .page-1-rectangle-element {
-  width: 33.93em;
+  width: 40%;
 }
 
 #page-1-rectangle-element-header {
@@ -233,8 +233,12 @@ a {
 }
 
 #page-1-rectangle-element-header-empty {
-  height: 3.85em;
   margin-top: 3.9em;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+  color: transparent;
 }
 
 
@@ -321,8 +325,9 @@ a {
 
 .page-1-text-wrapper {
   display: flex;
+  width: 85%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 0em 0em;
   padding-bottom: 10em;
@@ -497,6 +502,20 @@ footer {
   opacity: 0.4;
 }
 
+@media only screen and (orientation: landscape) and (min-width: 1920px) {
+
+  #page-1-rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100em;
+    height: 35em;
+    border-radius: 1.5625em;
+    background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
+  }
+}
+
 /*Tablets landscape*/
 
 @media only screen and (orientation: landscape) and (min-width: 960px) and (max-width: 1023px) {
@@ -638,7 +657,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px !important;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1036,7 +1055,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1247,13 +1266,15 @@ footer {
   }
 
   #footer-mobile {
-    position: relative;
+    bottom: 0em !important;
+    padding: 0em 0em !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 1em;
+    position: relative;
   }
+
 
   #footer-img {
     width: auto;

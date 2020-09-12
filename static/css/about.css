@@ -760,7 +760,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px !important;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1200,6 +1200,10 @@ footer {
     margin-bottom: 0em;
   }
 
+  #footer-link {
+    padding-right: 2em !important;
+  }
+
   #footer-img {
     width: auto;
     height: 1.25em;
@@ -1346,7 +1350,7 @@ footer {
     line-height: 1.125em;
     letter-spacing: 0.05em;
     transition: 0.2s linear;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   #navbar-download-link-content-mobile:active {
@@ -1755,12 +1759,17 @@ footer {
   }
 
   #footer-mobile {
+    bottom: 0em !important;
+    padding: 0em 0em !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    top: 45%;
+  }
+
+  #footer-link {
+    padding-right: 2em !important;
   }
 
   #footer-img {
