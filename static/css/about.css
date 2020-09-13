@@ -1319,6 +1319,15 @@ footer {
 /* Mobile 
 ------------------------------------------------------------------------------------------------*/
 @media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 1023px) {
+
+  .about-main-page-title {
+    width: auto;
+  }
+
+  .about-main-page-text {
+    width: auto;
+  }
+
   #logo-lion {
     widows: 2.5em;
     height: 2.5em;

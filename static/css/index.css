@@ -4,14 +4,12 @@
 }
 
 #answer-link {
-  color: #A0B4CB;
+  color: #a0b4cb;
 }
 
 .burger-cross {
   padding-left: 0em !important;
 }
-
-
 
 #globe:hover {
   cursor: pointer;
@@ -24,7 +22,6 @@
 .label_7e6 {
   display: none;
 }
-
 
 body {
   width: 100vw;
@@ -93,7 +90,7 @@ a:hover {
 .navbar-link {
   color: #ffffff;
   padding-left: 2.5em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 0.75em;
@@ -101,7 +98,7 @@ a:hover {
 
 #lang-select {
   color: #ffffff;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 0.75em;
@@ -135,7 +132,7 @@ a:hover {
   padding: 0.75em 0.5em;
   width: 10em;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -175,10 +172,12 @@ a:hover {
 
 /*****************************Main page************************************/
 #page-1 {
-  background: linear-gradient(62.93deg,
+  background: linear-gradient(
+      62.93deg,
       rgba(0, 15, 28, 0.73) 0.51%,
-      rgba(0, 15, 28, 0) 31.56%),
-    url('../../assets/pages/main/background/starwars.png');
+      rgba(0, 15, 28, 0) 31.56%
+    ),
+    url("../../assets/pages/main/background/starwars.png");
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +196,7 @@ a:hover {
 
 #main-header {
   width: 14em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 3em;
@@ -208,7 +207,7 @@ a:hover {
 .page-content-subheader {
   width: 16em;
   margin-top: 1.2em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1em;
@@ -258,7 +257,7 @@ a:hover {
 
 .logos-element-header {
   margin-bottom: 1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 0.75em;
@@ -280,7 +279,7 @@ a:hover {
   opacity: 1;
   color: #ffffff;
   border-radius: 8px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -297,7 +296,7 @@ a:hover {
   opacity: 1;
   color: #ffffff;
   border-radius: 8px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -350,7 +349,7 @@ a:hover {
 }
 
 .skeleton-button-text {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 0.875em;
@@ -364,7 +363,7 @@ a:hover {
 /****************************************************/
 
 #page-2 {
-  background: url('../../assets/pages/main/background/nfs.png');
+  background: url("../../assets/pages/main/background/nfs.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -382,7 +381,7 @@ a:hover {
 
 #page-content-header-left {
   width: 12em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 2em;
@@ -395,7 +394,7 @@ a:hover {
 .page-content-subheader-left {
   width: 22em;
   margin-top: 1.2em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1em;
@@ -406,7 +405,7 @@ a:hover {
 /****************************************************/
 
 #page-3 {
-  background: url('../../assets/pages/main/background/witcher.png');
+  background: url("../../assets/pages/main/background/witcher.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,7 +424,7 @@ a:hover {
 
 #page-content-header-right {
   width: 12em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 2em;
@@ -438,7 +437,7 @@ a:hover {
 .page-content-subheader-right {
   width: 26em;
   margin-top: 1.2em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1em;
@@ -449,7 +448,7 @@ a:hover {
 /****************************************************/
 
 #page-4 {
-  background: url('../../assets/pages/main/background/payday.png');
+  background: url("../../assets/pages/main/background/payday.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,7 +456,7 @@ a:hover {
 
 /****************************************************/
 #page-5 {
-  background: url('../../assets/pages/main/background/warthunder.png');
+  background: url("../../assets/pages/main/background/warthunder.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,7 +476,7 @@ a:hover {
 
 #questions {
   padding-top: 3.875em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 2em;
@@ -525,7 +524,7 @@ a:hover {
   position: relative;
   top: 0.3em;
   right: 1.5em;
-  color: #A0B4CB;
+  color: #a0b4cb;
   font-size: 3em;
 }
 
@@ -547,7 +546,7 @@ a:hover {
 .question-text-desktop {
   padding: 1.6em 0em;
   width: fit-content;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -561,7 +560,7 @@ a:hover {
 
 .answer-text {
   text-align: justify;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1em;
@@ -573,7 +572,7 @@ a:hover {
 
 /****************************************************/
 #page-7 {
-  background: url('../../assets/pages/main/background/illidan.png');
+  background: url("../../assets/pages/main/background/illidan.png");
   height: 120vh;
   display: flex;
   flex-direction: column;
@@ -588,7 +587,7 @@ a:hover {
 }
 
 .illidan-speaks {
-  background: url('/assets//misc/comic-bubble.svg');
+  background: url("/assets//misc/comic-bubble.svg");
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -608,7 +607,7 @@ a:hover {
 }
 
 #illidan-speaks-header {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
@@ -631,7 +630,7 @@ a:hover {
   width: 12em !important;
   text-align: center;
   padding: 1.25em 1.75em;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
   background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -698,37 +697,29 @@ footer {
   body {
     font-size: 16px;
   }
-
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1367px) {
-
   body {
     font-size: 16px;
   }
-
-
 }
 
 /*Ipad Pro Landscape*/
 
-
-
 /*Ipad Pro*/
 @media only screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
-
   #logo-bottom {
     width: 60% !important;
     height: auto;
   }
-
 
   #footer-download-link-content {
     width: 15em !important;
     text-align: center;
     padding: 1.25em 1.75em !important;
     margin-left: 0.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -761,7 +752,7 @@ footer {
     opacity: 1;
     color: #ffffff;
     border-radius: 8px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -842,7 +833,6 @@ footer {
     padding-left: 0em;
   }
 
-
   #navbar-main-link {
     margin-left: 1em;
   }
@@ -897,7 +887,7 @@ footer {
   #navbar-download-link-content-mobile {
     padding: 0.75em 1.5em;
     margin-right: -1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -950,7 +940,7 @@ footer {
 
   #page-1 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/starwars-mobile.png');
+      url("../../assets/pages/main/background_mobile/starwars-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1012,7 +1002,7 @@ footer {
 
   #page-2 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/nfs-mobile.png');
+      url("../../assets/pages/main/background_mobile/nfs-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1020,7 +1010,7 @@ footer {
 
   #page-3 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/witcher-mobile.png');
+      url("../../assets/pages/main/background_mobile/witcher-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1028,7 +1018,7 @@ footer {
 
   #page-4 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/payday-mobile.png');
+      url("../../assets/pages/main/background_mobile/payday-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1036,7 +1026,7 @@ footer {
 
   #page-5 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/warthunder-mobile.png');
+      url("../../assets/pages/main/background_mobile/warthunder-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1044,7 +1034,7 @@ footer {
 
   #page-7 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/illidan-mobile.png');
+      url("../../assets/pages/main/background_mobile/illidan-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1053,7 +1043,7 @@ footer {
   /****************************************/
   #questions {
     padding-top: 2.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 2em;
@@ -1118,7 +1108,7 @@ footer {
     width: 20em;
     padding: 2% 0%;
     width: fit-content;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.25em;
@@ -1128,7 +1118,7 @@ footer {
 
   .answer-text {
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1em;
@@ -1151,7 +1141,7 @@ footer {
   }
 
   .illidan-speaks {
-    background: url('/assets//misc/comic-bubble-mobile.svg');
+    background: url("/assets//misc/comic-bubble-mobile.svg");
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1173,7 +1163,7 @@ footer {
   }
 
   #illidan-speaks-header {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
@@ -1253,11 +1243,9 @@ footer {
 
 /*Apple Stuff*/
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
-
   .pg-page {
     height: 135vh;
   }
-
 
   #page-7 {
     height: 120vh !important;
@@ -1270,7 +1258,6 @@ footer {
   #arrow-fifth {
     display: none;
   }
-
 }
 
 /*Nexus like tablets*/
@@ -1280,7 +1267,6 @@ footer {
     width: 60% !important;
     height: auto;
   }
-
 
   #jivo {
     width: 1em;
@@ -1300,7 +1286,7 @@ footer {
     text-align: center;
     padding: 1.25em 1.75em !important;
     margin-left: 0.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -1320,7 +1306,7 @@ footer {
     opacity: 1;
     color: #ffffff;
     border-radius: 8px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -1343,8 +1329,6 @@ footer {
     padding-right: 2em;
   }
 
-
-
   #arrow-first,
   #arrow-second,
   #arrow-third,
@@ -1360,7 +1344,6 @@ footer {
   body {
     font-size: calc(100vw / 22.5);
   }
-
 
   .navbar {
     display: none;
@@ -1396,7 +1379,6 @@ footer {
   .burger-cross {
     padding-left: 0em;
   }
-
 
   #navbar-main-link {
     margin-left: 1em;
@@ -1452,7 +1434,7 @@ footer {
   #navbar-download-link-content-mobile {
     padding: 0.75em 1.5em;
     margin-right: -1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -1505,7 +1487,7 @@ footer {
 
   #page-1 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/starwars-mobile.png');
+      url("../../assets/pages/main/background_mobile/starwars-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1567,7 +1549,7 @@ footer {
 
   #page-2 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/nfs-mobile.png');
+      url("../../assets/pages/main/background_mobile/nfs-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1575,7 +1557,7 @@ footer {
 
   #page-3 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/witcher-mobile.png');
+      url("../../assets/pages/main/background_mobile/witcher-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1583,7 +1565,7 @@ footer {
 
   #page-4 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/payday-mobile.png');
+      url("../../assets/pages/main/background_mobile/payday-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1591,7 +1573,7 @@ footer {
 
   #page-5 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/warthunder-mobile.png');
+      url("../../assets/pages/main/background_mobile/warthunder-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -1599,7 +1581,7 @@ footer {
 
   #page-7 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/illidan-mobile.png');
+      url("../../assets/pages/main/background_mobile/illidan-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1608,7 +1590,7 @@ footer {
   /****************************************/
   #questions {
     padding-top: 2.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 2em;
@@ -1673,7 +1655,7 @@ footer {
     width: 20em;
     padding: 2% 0%;
     width: fit-content;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.25em;
@@ -1683,7 +1665,7 @@ footer {
 
   .answer-text {
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1em;
@@ -1706,7 +1688,7 @@ footer {
   }
 
   .illidan-speaks {
-    background: url('/assets//misc/comic-bubble-mobile.svg');
+    background: url("/assets//misc/comic-bubble-mobile.svg");
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1728,7 +1710,7 @@ footer {
   }
 
   #illidan-speaks-header {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
@@ -1807,7 +1789,6 @@ footer {
 }
 
 @media only screen and (orientation: landscape) and (min-width: 640px) and (max-width: 815px) {
-
   #footer-img,
   #footer-img-pilot,
   #footer-img-origin {
@@ -1899,8 +1880,6 @@ footer {
     padding-left: 0em;
   }
 
-
-
   #navbar-main-link {
     margin-left: 1em;
   }
@@ -1954,7 +1933,7 @@ footer {
 
   #navbar-download-link-content-mobile {
     padding: 0.75em 1.5em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -2007,7 +1986,7 @@ footer {
 
   #page-1 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/starwars-mobile.png');
+      url("../../assets/pages/main/background_mobile/starwars-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -2069,7 +2048,7 @@ footer {
 
   #page-2 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/nfs-mobile.png');
+      url("../../assets/pages/main/background_mobile/nfs-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -2077,7 +2056,7 @@ footer {
 
   #page-3 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/witcher-mobile.png');
+      url("../../assets/pages/main/background_mobile/witcher-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -2085,7 +2064,7 @@ footer {
 
   #page-4 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/payday-mobile.png');
+      url("../../assets/pages/main/background_mobile/payday-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -2093,7 +2072,7 @@ footer {
 
   #page-5 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/warthunder-mobile.png');
+      url("../../assets/pages/main/background_mobile/warthunder-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -2101,7 +2080,7 @@ footer {
 
   #page-7 {
     background: linear-gradient(360deg, #051621 0%, rgba(5, 22, 33, 0) 28.13%),
-      url('../../assets/pages/main/background_mobile/illidan-mobile.png');
+      url("../../assets/pages/main/background_mobile/illidan-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -2110,7 +2089,7 @@ footer {
   /****************************************/
   #questions {
     padding-top: 2.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 2em;
@@ -2175,7 +2154,7 @@ footer {
     width: 20em;
     padding: 2% 0%;
     width: fit-content;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.25em;
@@ -2185,7 +2164,7 @@ footer {
 
   .answer-text {
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1em;
@@ -2208,7 +2187,7 @@ footer {
   }
 
   .illidan-speaks {
-    background: url('/assets//misc/comic-bubble-mobile.svg');
+    background: url("/assets//misc/comic-bubble-mobile.svg");
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2230,7 +2209,7 @@ footer {
   }
 
   #illidan-speaks-header {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2em;
@@ -2328,7 +2307,7 @@ footer {
     opacity: 1;
     color: #ffffff;
     border-radius: 8px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -2342,7 +2321,7 @@ footer {
     text-align: center;
     padding: 1.25em 1.75em !important;
     margin-left: 0.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: bold;
     background: linear-gradient(180deg, #ff2f01 0%, #ff055f 100%);
@@ -2353,5 +2332,16 @@ footer {
     letter-spacing: 0.05em;
     transition: 0.2s linear;
     border-radius: 10px;
+  }
+
+  #page-content-header-right,
+  #page-content-header-left,
+  #main-header {
+    width: auto;
+  }
+
+  .page-content-subheader-left,
+  .page-content-subheader-right {
+    width: auto;
   }
 }
