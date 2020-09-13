@@ -196,7 +196,7 @@ a:hover {
 }
 
 #main-header {
-  width: auto;
+  width: 14em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -206,6 +206,7 @@ a:hover {
 }
 
 .page-content-subheader {
+  width: 16em;
   margin-top: 1.2em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -380,6 +381,7 @@ a:hover {
 }
 
 #page-content-header-left {
+  width: 12em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -391,6 +393,7 @@ a:hover {
 }
 
 .page-content-subheader-left {
+  width: 22em;
   margin-top: 1.2em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -421,6 +424,7 @@ a:hover {
 }
 
 #page-content-header-right {
+  width: 12em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -432,6 +436,7 @@ a:hover {
 }
 
 .page-content-subheader-right {
+  width: 26em;
   margin-top: 1.2em;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
